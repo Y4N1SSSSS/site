@@ -1,0 +1,17 @@
+*{
+    font-family: 'Poppins';
+}
+
+.titres{
+    text-align: center;
+    margin-bottom: -0.08%;
+}
+
+.ligne-arrondie {
+    width: 75px;
+    height: 5px; 
+    background-color: #a29082; 
+    border-radius: 5px; 
+    margin-left: 47%;
+    justify-content: center;
+}
