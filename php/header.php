@@ -11,29 +11,31 @@
 </head>
 <body>
 
-<nav class="navbar navbar-container navbar-expand-lg navbar-light couleurnav">
-  <a class="navbar-brand" href="../index.html">
-    
-  </a>
+<nav class="navbar navbar-expand-lg couleurnav">
+  <div class="container">
+    <a class="navbar-brand" href="../index.html">
+    <img src="logopasencorela.png" alt="Restaure Ton Patrimoine">
+    </a>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="../index.html">Accueil</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="../pages/inscription.html">Inscription</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="../pages/donation.html">Donation</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="../pages/planning.html">Planning</a>
-      </li>
-    </ul>
+    <div class="collapse navbar-collapse text-center" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/inscription.html">Inscription</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/donation.html">Donation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/planning.html">Planning</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
