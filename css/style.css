@@ -1,0 +1,13 @@
+@font-face {        /*sert à importer la police d'écriture de Helvetica*/ 
+    font-family: PoppinsMedium;
+    src: url("");
+}
+
+.navbar-container{
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.couleurnav{
+    background-color: #faf9f1;
+}
