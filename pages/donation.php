@@ -8,6 +8,9 @@
     <title>Donations</title>
 </head>
 <body>
+    <?php
+    include "../php/header.php" ;
+    ?>
     <h1 class="titres">Don Monétaire</h1>
     <div class="ligne-arrondie"></div>
     <div class="flexd">
