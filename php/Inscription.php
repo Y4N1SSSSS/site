@@ -21,19 +21,18 @@ $mdp = $_GET['mdp'];
     $user_nom = $verify_nom->fetchAll();
         if (count($user_nom) > 0){
             $erreur = "Le pseudonyme existe déjà!";
-            echo $erreur;
+            header('Location: InscriptionForm.php');
         }
         else {
             $inscrire = $pdo->prepare("insert into utilisateur(Nom_user,Mdp_user) values(?,?)");
-            if ($inscrire->execute(array($nom, $mdp))); } 
-            
-        $_SESSION['mdp'] = $mdp;
-        $_SESSION['nom'] = $nom;
+            if ($inscrire->execute(array($nom, $mdp))) { 
+                $_SESSION['mdp'] = $mdp;
+                $_SESSION['nom'] = $nom;
+                header('Location: ../index.php');
     }
+}
+}
 ?>
-
-<p> Vous êtes désormais inscris ! </p>
-<a href="Connexion.php"> VOUS CONNECTER </a>
 
 </article>
 </body>

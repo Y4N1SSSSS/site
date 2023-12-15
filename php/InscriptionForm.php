@@ -2,7 +2,6 @@
 require_once 'Config.php';
 require "header.php";
 ?>
-
 <article>
         <form method="get" action="Inscription.php">
             <p> Pseudonyme : </p>
