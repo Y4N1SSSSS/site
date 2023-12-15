@@ -14,7 +14,7 @@
 
 <nav class="navbar navbar-expand-lg couleurnav">
   <div class="container">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="index.php">
     <img src="logopasencorela.png" alt="Restaure Ton Patrimoine">
     </a>
 
@@ -37,6 +37,20 @@
           <a class="nav-link" href="pages/planning.php">Planning</a>
         </li>
       </ul>
+    </div>
+    <?php
+    error_reporting(0);
+      session_start();
+      //affiche le nom de l'utilisateur quand sa seesion est ouverte
+      echo $_SESSION['nom'];
+    ?>
+    <div>
+      <a href="php/Connexion.php"> co </a> - 
+      <a href="php/InscriptionForm.php"> Insc </a>
+
+      <a href="php/logout.php">
+        <img width="32px" height="32px" src="images/deco.png" alt="deco">
+      </a>
     </div>
   </div>
 </nav>
