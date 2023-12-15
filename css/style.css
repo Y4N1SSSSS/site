@@ -1,7 +1,12 @@
-@font-face {        /*sert à importer la police d'écriture de Helvetica*/ 
+@font-face {        
 font-family: PoppinsMedium;
 src: url("../font/Poppins-Medium.ttf");
 }
+
+@font-face {        
+    font-family: PoppinsBold;
+    src: url("../font/Poppins-Bold.ttf");
+    }
 
 .couleurnav{
 background-color: #f9f7e4;
@@ -41,3 +46,21 @@ transform: scaleX(1);
 transform-origin: bottom left;
 }
 
+.textecarrousel{
+padding-top: 10%;
+padding-bottom: 10%;
+text-transform: uppercase;
+font-family: PoppinsBold;
+}
+
+.owl-dots {
+position: absolute;
+bottom: 7vh;
+width: 100%;
+}
+
+.owl-dot {
+display: inline-block;
+margin: 0 2px;
+margin:auto;
+}

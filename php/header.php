@@ -7,7 +7,6 @@
   <script src="../js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/style.css">
-  <title>Accueil</title>
 </head>
 <body>
 
@@ -24,18 +23,24 @@
     <div class="collapse navbar-collapse text-center" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" href="../index.html">Accueil</a>
+          <a class="nav-link" href="../index.php">Accueil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../pages/inscription.html">Inscription</a>
+          <a class="nav-link" href="../pages/inscription.php">Inscription</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../pages/donation.html">Donation</a>
+          <a class="nav-link" href="../pages/donation.php">Donation</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../pages/planning.html">Planning</a>
+          <a class="nav-link" href="../pages/planning.php">Planning</a>
         </li>
       </ul>
     </div>
+    <?php
+    error_reporting(0);
+      session_start();
+      //affiche le nom de l'utilisateur quand sa seesion est ouverte
+      echo $_SESSION['nom'];
+    ?>
   </div>
 </nav>
