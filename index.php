@@ -1,3 +1,10 @@
+<?php
+    error_reporting(0);
+      session_start();
+      //affiche le nom de l'utilisateur quand sa seesion est ouverte
+      echo $_SESSION['nom'];
+    ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -36,21 +43,18 @@
         <li class="nav-item">
           <a class="nav-link" href="pages/planning.php">Planning</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="php/Connexion.php">Connexion</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="php/InscriptionForm.php">Inscription</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="php/logout.php">
+            <img width="32px" height="32px" src="images/deco.png" alt="deco">
+          </a>
+        </li>
       </ul>
-    </div>
-    <?php
-    error_reporting(0);
-      session_start();
-      //affiche le nom de l'utilisateur quand sa seesion est ouverte
-      echo $_SESSION['nom'];
-    ?>
-    <div>
-      <a href="php/Connexion.php"> co </a> - 
-      <a href="php/InscriptionForm.php"> Insc </a>
-
-      <a href="php/logout.php">
-        <img width="32px" height="32px" src="images/deco.png" alt="deco">
-      </a>
     </div>
   </div>
 </nav>

@@ -51,7 +51,8 @@ padding-top: 10%;
 padding-bottom: 10%;
 text-transform: uppercase;
 font-family: PoppinsBold;
-
+color: #f9f7e4 ;
+text-shadow: 2px 2px 2px #000000;
 }
 
 .owl-dots {
