@@ -36,5 +36,11 @@
         </li>
       </ul>
     </div>
+    <?php
+    error_reporting(0);
+      session_start();
+      //affiche le nom de l'utilisateur quand sa seesion est ouverte
+      echo $_SESSION['nom'];
+    ?>
   </div>
 </nav>
