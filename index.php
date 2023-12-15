@@ -25,7 +25,7 @@
     <div class="collapse navbar-collapse text-center" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Accueil</a>
+          <a class="nav-link" href="index.php">Accueil</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="pages/inscription.php">Inscription</a>
