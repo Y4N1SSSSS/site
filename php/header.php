@@ -42,5 +42,12 @@
       //affiche le nom de l'utilisateur quand sa seesion est ouverte
       echo $_SESSION['nom'];
     ?>
+    <div>
+      <a href="Connexion.php"> co </a> - 
+      <a href="InscriptionForm.php"> Insc </a>
+      <a href="logout.php">
+        <img width="32px" height="32px" src="../images/deco.png" alt="deco">
+      </a>
+    </div>
   </div>
 </nav>

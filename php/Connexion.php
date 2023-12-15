@@ -1,6 +1,6 @@
 <?php
-require_once 'pages/Config.php';
-require "pages/header.php";
+require_once 'Config.php';
+require "header.php";
 ?>
 
 <article>
@@ -31,9 +31,9 @@ try {
   $stmt->execute([$nom, $mdp]);
 
   if ($stmt->rowCount() == 1) {
-    header('Location: index.php');
+    header('Location: ../index.php');
   } else {
-    echo ('Mauvais compte selectionnés');
+    echo (' ');
   }
 } catch (PDOException $e) {
   die("La connexion a échoué: " . $e->getMessage());
