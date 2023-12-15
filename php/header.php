@@ -23,16 +23,16 @@
     <div class="collapse navbar-collapse text-center" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" href="../index.html">Accueil</a>
+          <a class="nav-link" href="../index.php">Accueil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../pages/inscription.html">Inscription</a>
+          <a class="nav-link" href="../pages/inscription.php">Inscription</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../pages/donation.html">Donation</a>
+          <a class="nav-link" href="../pages/donation.php">Donation</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../pages/planning.html">Planning</a>
+          <a class="nav-link" href="../pages/planning.php">Planning</a>
         </li>
       </ul>
     </div>
