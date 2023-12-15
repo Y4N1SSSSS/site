@@ -3,6 +3,11 @@
     color:#1f1c1a;
 }
 
+body{
+    margin: 0;
+    padding: 0;
+}
+
 /* -------------------------------------------- */
 /* ----------------LES TEXTES------------------ */
 /* -------------------------------------------- */
@@ -150,8 +155,6 @@ span{
 .back{
     background-color: #f9f7e4;
     padding: 1%;
-    margin-left: -1%;
-    margin-right: -1%;
     background-image: url(../images/iconsbackground.png);
     background-size: 100%;
 }
