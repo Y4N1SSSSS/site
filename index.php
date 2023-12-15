@@ -1,10 +1,4 @@
-<?php
-    error_reporting(0);
-      session_start();
-      //affiche le nom de l'utilisateur quand sa seesion est ouverte
-      echo $_SESSION['nom'];
-    ?>
-
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -43,19 +37,44 @@
         <li class="nav-item">
           <a class="nav-link" href="pages/planning.php">Planning</a>
         </li>
-        <li class="nav-item">
+
+        <?php if(isset($_SESSION["nom"])){
+          echo(' 
+          </ul>
+            </div>'.
+            $_SESSION["nom"].'
+            <a class="nav-link" href="php/logout.php">
+              <img width="32px" height="32px" src="images/deco.png" alt="deco">
+            </a>
+          ');
+        } 
+        else{
+          echo(' 
+          <li class="nav-item">
+            <a class="nav-link" href="php/Connexion.php">Connexion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="php/InscriptionForm.php">Inscription</a>
+          </li>
+        </ul>
+      </div>
+           ');
+        }
+        ?>
+          
+          
+
+        <!-- <li class="nav-item">
           <a class="nav-link" href="php/Connexion.php">Connexion</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="php/InscriptionForm.php">Inscription</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="php/logout.php">
-            <img width="32px" height="32px" src="images/deco.png" alt="deco">
-          </a>
-        </li>
       </ul>
     </div>
+    <a class="nav-link" href="php/logout.php">
+            <img width="32px" height="32px" src="images/deco.png" alt="deco">
+          </a> -->
   </div>
 </nav>
 
