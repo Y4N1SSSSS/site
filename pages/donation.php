@@ -23,18 +23,19 @@
         <div class="progress-container">
             <div class="progress-bar" id="myBar"></div>
         </div>
-        <a href="#" class="bouton" onclick="move()">Faire un don</a> <a href="#" class="bouton">En savoir plus</a>
+        <a class="bouton" onclick="move()">Faire un don</a><a class="bouton">En savoir plus</a>
     </div>
     <div class="back">
     <h1 class="titres">Don Matériel</h1>
     <div class="ligne-arrondie"></div>
     <div class="flex1">
         <span class="spanobj"><span class="titredon">Aidez-nous a Préserver Notre Culture</span><br><br>
-        Chaque geste contribue à tisser la toile de notre passé, créant un lien tangible entre hier, aujourd'hui et demain. Rejoins-nous dans cette aventure de préservation, car la restauration de notre patrimoine commence avec toi.
+        Chaque geste contribue à tisser la toile de notre passé, créant un lien tangible entre hier, aujourd'hui et demain. Rejoins-nous dans cette aventure de préservation, car la restauration de notre patrimoine commence avec toi.<br>
         <a href="#" class="bouton">Faire un don</a> <a href="#" class="bouton">En savoir plus</a></span>
         <img class="imagedon" src="../images/donsOBJ.png"> 
     </div>
-</div>
     <script src="../js/scriptdon.js"></script>
+</div>
+    
 </body>
 </html>
