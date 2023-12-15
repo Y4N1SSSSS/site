@@ -18,7 +18,7 @@
     <!-- Section en flexbox pour l'image et le texte -->
     <div class="flexd">
         <img class="imagedon" src="../images/donsEUR.png"> 
-        <span><span class="titredon">Soutenez Notre Patrimoine National</span><br><br>
+        <span class="spanD"><span class="titredon">Soutenez Notre Patrimoine National</span><br><br>
             Cher(e) ami(e) de la culture,
             Votre don contribue à la préservation de notre riche patrimoine français. Aidez-nous à protéger nos trésors historiques et culturels. Chaque euro compte.</span>
     </div>
@@ -44,7 +44,7 @@
         Chaque geste contribue à tisser la toile de notre passé, créant un lien tangible entre hier, aujourd'hui et demain. Rejoins-nous dans cette aventure de préservation, car la restauration de notre patrimoine commence avec toi.<br>
         <!-- BOUTON POUR LES DONS ET INFORMATIONS -->
         <a class="bouton NS">Faire un don</a> <a class="bouton NS">En savoir plus</a></span>
-        <img class="imagedon" src="../images/donsOBJ.png"> 
+        <img class="imagedonOBJ" src="../images/donsOBJ.png"> 
     </div>
     <!-- Javascript -->
     <script src="../js/scriptdon.js"></script>
