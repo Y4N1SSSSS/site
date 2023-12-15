@@ -1,3 +1,10 @@
+<?php
+    error_reporting(0);
+      session_start();
+      //affiche le nom de l'utilisateur quand sa seesion est ouverte
+      echo $_SESSION['nom'];
+    ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -14,7 +21,7 @@
 
 <nav class="navbar navbar-expand-lg couleurnav">
   <div class="container">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="index.php">
     <img src="logopasencorela.png" alt="Restaure Ton Patrimoine">
     </a>
 
@@ -36,6 +43,17 @@
         <li class="nav-item">
           <a class="nav-link" href="pages/planning.php">Planning</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="php/Connexion.php">Connexion</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="php/InscriptionForm.php">Inscription</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="php/logout.php">
+            <img width="32px" height="32px" src="images/deco.png" alt="deco">
+          </a>
+        </li>
       </ul>
     </div>
   </div>
@@ -45,17 +63,17 @@
 <section id="carrousel">
 
 <div class="owl-carousel owl-theme">
-  <div class="item" style="background-image: url('images/carrousel1.png');">
+  <div class="item imgcarrousel1">
     <div class="overlay-content">
       <h1 class="text-center textecarrousel">Restaure ton patrimoine</h1>
     </div>
   </div>
-  <div class="item" style="background-image: url('images/carrousel2.png');">
+  <div class="item imgcarrousel2">
     <div class="overlay-content">
       <h1 class="text-center textecarrousel">Vous aussi faites partie de l'aventure</h1>
     </div>
   </div>
-  <div class="item" style="background-image: url('images/carrousel3.png');">
+  <div class="item imgcarrousel3">
     <div class="overlay-content">
       <h1 class="text-center textecarrousel">Inscrivez-vous dès maintenant</h1>
     </div>

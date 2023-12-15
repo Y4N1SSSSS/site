@@ -1,6 +1,6 @@
 <?php
-require_once 'pages/Config.php';
-require "pages/header.php";
+require_once 'Config.php';
+require "header.php";
 ?>
 
 <article>
