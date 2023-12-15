@@ -51,6 +51,7 @@ padding-top: 10%;
 padding-bottom: 10%;
 text-transform: uppercase;
 font-family: PoppinsBold;
+
 }
 
 .owl-dots {
@@ -63,4 +64,17 @@ width: 100%;
 display: inline-block;
 margin: 0 2px;
 margin:auto;
+}
+
+.imgcarrousel1{
+    background-image: url('../images/carrousel1.png');
+}
+
+.imgcarrousel2{
+    background-image: url('../images/carrousel2.png');
+}
+
+.imgcarrousel3{
+    background-image: url('../images/carrousel3.png'); 
+    width:100%;
 }

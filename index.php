@@ -14,7 +14,7 @@
 
 <nav class="navbar navbar-expand-lg couleurnav">
   <div class="container">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="index.php">
     <img src="logopasencorela.png" alt="Restaure Ton Patrimoine">
     </a>
 
@@ -25,7 +25,7 @@
     <div class="collapse navbar-collapse text-center" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Accueil</a>
+          <a class="nav-link" href="index.php">Accueil</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="pages/inscription.php">Inscription</a>
@@ -45,17 +45,17 @@
 <section id="carrousel">
 
 <div class="owl-carousel owl-theme">
-  <div class="item" style="background-image: url('images/carrousel1.png');">
+  <div class="item imgcarrousel1">
     <div class="overlay-content">
       <h1 class="text-center textecarrousel">Restaure ton patrimoine</h1>
     </div>
   </div>
-  <div class="item" style="background-image: url('images/carrousel2.png');">
+  <div class="item imgcarrousel2">
     <div class="overlay-content">
       <h1 class="text-center textecarrousel">Vous aussi faites partie de l'aventure</h1>
     </div>
   </div>
-  <div class="item" style="background-image: url('images/carrousel3.png');">
+  <div class="item imgcarrousel3">
     <div class="overlay-content">
       <h1 class="text-center textecarrousel">Inscrivez-vous dès maintenant</h1>
     </div>
