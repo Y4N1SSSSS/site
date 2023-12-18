@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <script src="js/jquery-3.6.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -29,7 +30,7 @@
           <a class="nav-link" href="index.php">Accueil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="pages/inscription.php">Inscription</a>
+          <a class="nav-link" href="pages/inscription.php">Rejoignez-nous</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="pages/donation.php">Donation</a>
@@ -90,5 +91,38 @@
 
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/carrousel.js"></script>
+
+</section>
+
+
+
+<section id="contenu">
+
+<div>
+  <h2 class="titres">En quoi consiste l'événement ?</h1>
+  <div class="d-flex justify-content-center">
+  <div class="ligne-arrondie"></div>
+  </div>
+</div>
+
+<div class="mt-5 d-flex justify-content-center">
+<img class="w-50" src="images/illustrationprojet.png"></img>
+</div>
+
+<div class="mt-5 container">
+  <div class="row">
+    <div class="col-lg-6">
+    Lorem ipsum dolor sit amet 
+  consectetur. Est ac aliquam vitae 
+  amet. Donec facilisi diam diam orci 
+  aliquam in neque volutpat quis. 
+  Gravida eleifend et id morbi. Tempus 
+  ac fames a vitae enim.
+    </div>
+    <div class="col-lg-6 d-flex align-center">
+    <button class="bouton-inscrire">S'inscrire</button>
+    </div>
+  </div>  
+</div>
 
 </section>

@@ -79,3 +79,37 @@ margin:auto;
     background-image: url('../images/carrousel3.png'); 
     width:100%;
 }
+
+.ligne-arrondie {
+    width: 75px;
+    height: 5px; 
+    background-color: #a29082; 
+    border-radius: 5px; 
+    justify-content: center;
+    margin-top: 0.7%;
+}
+
+.titres{
+    font-family: Poppins;
+    text-align: center;
+    margin-bottom: -0.08%;
+    font-weight: bolder;
+    margin-top: 2%;
+    text-transform: uppercase;
+}
+
+.bouton-inscrire {
+    background-color: #f9f7e4;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    color: #000000; /* Couleur du texte */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Effet de transition sur la couleur de fond */
+}
+    /* Style au survol */
+.bouton-inscrire:hover {
+      background-color: #dcd9b5;
+    }
+  
