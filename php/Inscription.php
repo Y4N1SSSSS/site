@@ -20,7 +20,7 @@ $mdp = $_GET['mdp'];
     $verify_nom->execute(array($nom));
     $user_nom = $verify_nom->fetchAll();
         if (count($user_nom) > 0){
-            $erreur = "Le pseudonyme existe déjà!";
+            $_SESSION['error'] = " Ce compte existe deja. Veuillez selectionner un autre nom d'utilisateur";
             header('Location: InscriptionForm.php');
         }
         else {

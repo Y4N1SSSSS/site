@@ -125,10 +125,25 @@
 </div>
 
 </section>
-<article>
-<form action="php/ajout.php" method="GET">
-        <div> <label for="titre"> Titre : </label> <input class="border" type="text" name="titre" required="required"> </div>
-        <div> <label for="texte"> texte : </label> <input class="border" type="text" name="texte" required="required"> </div>
-        <input type="submit" value="Ajouter l'article"/>
-    </form>
+<article class="Blog">
+  <form action="php/ajout.php" method="GET">
+    <div> <label for="titre"> Titre : </label> <input class="border" type="text" name="titre" required="required"> </div>
+    <div> <label for="texte"> texte : </label> <input class="border" type="text" name="texte" required="required"> </div>
+    <input type="submit" value="Commenter"/>
+  </form>
+  <?php
+  $requete='SELECT * FROM article';
+    $resultats=$pdo->query($requete);
+    $article=$resultats->fetch(PDO::FETCH_ASSOC);
+    $resultats->closeCursor();
+  ?>
+    <section>
+    <h1><?php echo $article["titre"];?></h1>
+    <em>Rédigé le <?php echo $article["Date_article"];?></em><br>
+    <p> <?php echo $article["texte"]; ?> </p>
+</section>
+
+
+
+
 </article>
