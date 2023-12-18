@@ -7,11 +7,11 @@
     <link href='../css/styledonations.css' rel='stylesheet'>
     <title>Donations</title>
 </head>
-<body>
     <!-- Ajout du header -->
     <?php
-    include "../php/header.php" ;
+        include "../php/header.php" ;
     ?>
+<body>
     <!-- SECTION DES DONS EN EUROS -->
     <h1 class="titres">Don Monétaire</h1>
     <div class="ligne-arrondie"></div>
