@@ -1,4 +1,4 @@
-<?php require_once 'Config.php';
+<?php require_once 'php/Config.php';
   session_start(); ?>
 <!DOCTYPE html>
 <html lang="fr">
