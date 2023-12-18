@@ -64,20 +64,6 @@
            ');
         }
         ?>
-          
-          
-
-        <!-- <li class="nav-item">
-          <a class="nav-link" href="php/Connexion.php">Connexion</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="php/InscriptionForm.php">Inscription</a>
-        </li>
-      </ul>
-    </div>
-    <a class="nav-link" href="php/logout.php">
-            <img width="32px" height="32px" src="images/deco.png" alt="deco">
-          </a> -->
   </div>
 </nav>
 

@@ -1,8 +1,6 @@
 <?php
     error_reporting(0);
       session_start();
-      //affiche le nom de l'utilisateur quand sa seesion est ouverte
-      echo $_SESSION['nom'];
     ?>
 
 <!DOCTYPE html>
@@ -33,21 +31,24 @@
           <a class="nav-link" href="../index.php">Accueil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../pages/inscription.php">Inscription</a>
+          <a class="nav-link" href="pages/inscription.php">Inscription</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../pages/donation.php">Donation</a>
+          <a class="nav-link" href="pages/donation.php">Donation</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../pages/planning.php">Planning</a>
+          <a class="nav-link" href="pages/planning.php">Planning</a>
         </li>
         <?php if(isset($_SESSION["nom"])){
           echo(' 
+          <li class="nav-item">
+          <p class="nav-link">'
+          .$_SESSION["nom"].'</p>
+        </li>
           </ul>
-            </div>'.
-            $_SESSION["nom"].'
+            </div>
             <a class="nav-link" href="php/logout.php">
-              <img width="32px" height="32px" src="images/deco.png" alt="deco">
+              <img width="32px" height="32px" src="../images/deco.png" alt="deco">
             </a>
           ');
         } 
