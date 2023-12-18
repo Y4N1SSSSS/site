@@ -1,6 +1,8 @@
 <?php
 require_once 'Config.php';
-require "header.php";
+require "headerconnexion.php";
+session_start();
+error_reporting(0);
 ?>
 <article>
         <form method="get" action="Inscription.php">
@@ -11,5 +13,6 @@ require "header.php";
             <input type="submit" name="done" placeholder="Confirmer">
         </form>
     </article>
+    <?PHP echo $_SESSION['error']; ?>
 </body>
 </html>
