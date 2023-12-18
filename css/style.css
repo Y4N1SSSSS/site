@@ -126,3 +126,27 @@ margin:auto;
 .rotationlogo{
     transform: rotate(180deg);
 }
+
+/* FOOTER */
+.footer{
+    background-color: #1f1c1a;
+    color: #f9f7e4;
+}
+
+.textFooter{
+    color: #f9f7e4;
+    margin-bottom: 3%;
+}
+
+.titresFooter{
+    color: #f9f7e4;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10%;
+}
+
+.imagesfooter{
+    width:4vw;
+    margin-right: 8%;
+    height:auto;
+}
