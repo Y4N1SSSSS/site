@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link href='../css/styledonations.css' rel='stylesheet'>
+    <link href='../css/stylepages.css' rel='stylesheet'>
     <title>Donations</title>
 </head>
     <!-- Ajout du header -->
@@ -14,7 +14,7 @@
 <body>
     <!-- SECTION DES DONS EN EUROS -->
     <h1 class="titres">Don Monétaire</h1>
-    <div class="ligne-arrondie"></div>
+    <div class="ligne-container"> <div class="ligne-arrondie"></div> </div>
     <!-- Section en flexbox pour l'image et le texte -->
     <div class="flexd">
         <img class="imagedon" src="../images/donsEUR.png"> 
@@ -37,7 +37,7 @@
     <div class="back">
         <!-- DECTION DES DONS DE MATÉRIEL -->
     <h1 class="titres">Don Matériel</h1>
-    <div class="ligne-arrondie"></div>
+    <div class="ligne-container"> <div class="ligne-arrondie"></div> </div>
     <!-- Section en flexbox pour l'image et le texte -->
     <div class="flex1">
         <span class="spanobj"><span class="titredon">Aidez-nous a Préserver Notre Culture</span><br><br>
