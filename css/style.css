@@ -98,20 +98,22 @@ margin:auto;
     text-transform: uppercase;
 }
 
-.bouton-inscrire {
-    background-color: #f9f7e4;
-    padding: 10px 5px;
-    border: none;
-    border-radius: 5px;
-    color: #000000; /* Couleur du texte */
+.bouton {
+    display: inline-block;
+    padding: 10px 20px;
     font-size: 16px;
+    text-align: center;
+    text-decoration: none !important;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    color: #fff;
+    background-color: #1f1c1a;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Effet de transition sur la couleur de fond */
+    margin-right: 2%;
 }
-    /* Style au survol */
-.bouton-inscrire:hover {
-      background-color: #dcd9b5;
-    }
+
+.bouton:hover {
+    background-color: #a29082;
+}
 
 .co{
     font-family: PoppinsMedium;
@@ -149,4 +151,16 @@ margin:auto;
     width:4vw;
     margin-right: 8%;
     height:auto;
+}
+
+.card-text{
+    text-align: center!important;
+}
+
+.policecarte {
+    font-family: PoppinsMedium;
+}
+
+.policecartesimple{
+    font-family: Poppins;
 }

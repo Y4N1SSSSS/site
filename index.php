@@ -116,40 +116,96 @@
 </div>
 
 <div class="mt-5 container">
-  <div class="row">
+  <div class="row d-flex justify-content-center">
     <div class="col-lg-6">
+      <h4>
     Lorem ipsum dolor sit amet 
   consectetur. Est ac aliquam vitae 
   amet. Donec facilisi diam diam orci 
   aliquam in neque volutpat quis. 
   Gravida eleifend et id morbi. Tempus 
   ac fames a vitae enim.
+      </h4> 
     </div>
-    <div class="col-lg-6 d-flex align-center">
-    <button class="bouton-inscrire">S'inscrire</button>
+    <div class="col-lg-4 d-flex align-items-center justify-content-center">
+    <a class="bouton">S'inscrire</a>
     </div>
   </div>  
 </div>
 
 </section>
-<article class="Blog">
-  <form action="php/ajout.php" method="GET">
-    <div> <label for="titre"> Titre : </label> <input class="border" type="text" name="titre" required="required"> </div>
-    <div> <label for="texte"> texte : </label> <input class="border" type="text" name="texte" required="required"> </div>
-    <input type="submit" value="Commenter"/>
-  </form>
-  <?php
-    $requete='SELECT * FROM article ORDER BY ID_article DESC LIMIT 5';
+
+<section>
+
+<div class="mt-5">
+  <h2 class="titres">Qui somme-nous ?</h1>
+  <div class="d-flex justify-content-center">
+  <div class="ligne-arrondie"></div>
+  </div>
+</div>
+<div class="mt-5 container">
+  <div class="row d-flex justify-content-center align-items-center">
+    <div class="col-lg-5">
+      <h4>
+    Lorem ipsum dolor sit amet 
+  consectetur. Est ac aliquam vitae 
+  amet. Donec facilisi diam diam orci 
+  aliquam in neque volutpat quis. 
+  Gravida eleifend et id morbi. Tempus 
+  ac fames a vitae enim.
+      </h4> 
+    </div>
+    <div class="col-lg-5">
+    <img class="w-100" src="images/illustrationequipe.png"></img>
+    </div>
+  </div>  
+</div>
+
+</section>
+
+<div class="mt-5">
+  <h2 class="titres">Donnez-nous votre avis sur l'événement</h1>
+  <div class="d-flex justify-content-center">
+  <div class="ligne-arrondie"></div>
+  </div>
+</div>
+
+<article class="Blog mt-5">
+    <?php if(isset($_SESSION["nom"])): ?>
+        <form action="php/ajout.php" method="GET">
+            <div>
+                <label for="titre"> Titre : </label>
+                <input class="border" type="text" name="titre" required="required">
+            </div>
+            <div>
+                <label for="texte"> texte : </label>
+                <input class="border" type="text" name="texte" required="required">
+            </div>
+            <input type="submit" value="Commenter"/>
+        </form>
+    <?php endif; ?>
+
+    <?php
+    $requete='SELECT * FROM article ORDER BY ID_article DESC LIMIT 6';
     $resultats=$pdo->query($requete);
     $article=$resultats->fetchAll(PDO::FETCH_ASSOC);
     $resultats->closeCursor();
-  ?>
-  <section> 
-    <?php foreach($article as $commentaire): ?>
-      <h1><?php echo $commentaire["Titre"];?></h1>
-      <em>Rédigé le <?php echo $commentaire["Date_article"];?></em><br>
-      <p> <?php echo $commentaire["Contenue"]; ?> </p>
-    <?php endforeach; ?>
-  </section>
-  <a href="pages/blog.php"> Voir plus </a>
+    ?>
+
+  <div class="container">
+    <div class="row">
+        <?php foreach($article as $commentaire): ?>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title policecarte"><?php echo $commentaire["Titre"]; ?></h5>
+                        <p class="card-text policecartesimple"><?php echo $commentaire["Contenue"]; ?></p>
+                        <p class="card-text policecartesimple"><small class="text-muted">Rédigé le <?php echo $commentaire["Date_article"]; ?></small></p>
+                    </div>
+                </div>
+            </div>
+        <?php endforeach; ?>
+    </div>
+  </div>
+    <a href="pages/blog.php"> Voir plus </a>
 </article>
