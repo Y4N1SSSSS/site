@@ -1,8 +1,7 @@
 <?php
-  require_once 'Config.php';
-  error_reporting(0);
-  session_start();
-?>
+    error_reporting(0);
+      session_start();
+    ?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -56,10 +55,10 @@
         else{
           echo(' 
           <li class="nav-item">
-            <a class="nav-link" href="../php/Connexion.php">Connexion</a>
+            <a class="nav-link" href="Connexion.php">Connexion</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../php/InscriptionForm.php">Inscription</a>
+            <a class="nav-link" href="InscriptionForm.php">Inscription</a>
           </li>
         </ul>
       </div>

@@ -1,6 +1,6 @@
 <?php
 require_once 'Config.php';
-require "header.php";
+require "headerconnexion.php";
 ?>
 <article>
         <form method="get" action="Inscription.php">
