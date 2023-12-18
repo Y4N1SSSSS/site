@@ -33,7 +33,7 @@
           <a class="nav-link" href="../index.php">Accueil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../pages/inscription.php">Inscription</a>
+          <a class="nav-link" href="../pages/inscription.php">Rejoignez-nous</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="../pages/donation.php">Donation</a>
