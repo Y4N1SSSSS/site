@@ -1,4 +1,5 @@
-<?php session_start(); ?>
+<?php require_once 'Config.php';
+  session_start(); ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -126,3 +127,10 @@
 </div>
 
 </section>
+<article>
+<form action="php/ajout.php" method="GET">
+        <div> <label for="titre"> Titre : </label> <input class="border" type="text" name="titre" required="required"> </div>
+        <div> <label for="texte"> texte : </label> <input class="border" type="text" name="texte" required="required"> </div>
+        <input type="submit" value="Ajouter l'article"/>
+    </form>
+</article>

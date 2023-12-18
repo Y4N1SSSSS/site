@@ -1,7 +1,8 @@
 <?php
-    error_reporting(0);
-      session_start();
-    ?>
+  require_once 'Config.php';
+  error_reporting(0);
+  session_start();
+?>
 
 <!DOCTYPE html>
 <html lang="fr">
