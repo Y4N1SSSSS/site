@@ -1,11 +1,13 @@
 *{
-    font-family: 'Poppins';
     color:#1f1c1a;
 }
 
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins';
+    backdrop-filter: blur(10px);
+    
 }
 
 /* -------------------------------------------- */
@@ -16,10 +18,10 @@ body{
 .titres{
     text-align: center;
     margin-bottom: -0.08%;
-    font-weight: bolder;
     margin-top: 2%;
     text-transform: uppercase;
 }
+
 
 .titredon{
     font-size: 1.5vw;
