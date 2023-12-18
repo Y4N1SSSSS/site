@@ -18,7 +18,7 @@
 
 <nav class="navbar navbar-expand-lg couleurnav">
   <div class="container">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../index.php">
     <img src="logopasencorela.png" alt="Restaure Ton Patrimoine">
     </a>
 
