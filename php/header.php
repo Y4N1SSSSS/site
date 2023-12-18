@@ -31,13 +31,13 @@
           <a class="nav-link" href="../index.php">Accueil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="pages/inscription.php">Inscription</a>
+          <a class="nav-link" href="../pages/inscription.php">Inscription</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="pages/donation.php">Donation</a>
+          <a class="nav-link" href="../pages/donation.php">Donation</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="pages/planning.php">Planning</a>
+          <a class="nav-link" href="../pages/planning.php">Planning</a>
         </li>
         <?php if(isset($_SESSION["nom"])){
           echo(' 
