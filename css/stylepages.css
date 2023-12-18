@@ -22,6 +22,13 @@ body{
     text-transform: uppercase;
 }
 
+.titresR{
+    text-align: center;
+    margin-bottom: -0.08%;
+    margin-top: 2%;
+    text-transform: uppercase;
+    margin-top: 10%;
+}
 
 .titredon{
     font-size: 1.5vw;
@@ -32,6 +39,12 @@ body{
 span{
     font-size: 1.2vw;
     margin-right: 5%;
+}
+
+.spanResult{
+    font-size: 1.2vw;
+    margin-right: 5%;
+    text-align: center;
 }
 
 .spanD{
@@ -48,8 +61,8 @@ span{
 }
 
 .txtclasse{
-    width: 100%;
-    margin-right: -37%;
+    width:50vw;
+    margin-right: 5%;
 }
 
 /* BARRE DE PROGRESSION */
@@ -70,15 +83,29 @@ span{
     height: 5px; 
     background-color: #a29082; 
     border-radius: 5px; 
-    margin-left: 47%;
     justify-content: center;
+    margin-top: 0.7%;
+}
+
+.ligne-container{
+    display: flex;
+    justify-content: center;
+}
+
+.ligne-arrondieXXL {
+    width: 350px;
+    height: 5px; 
+    background-color: #a29082; 
+    border-radius: 5px; 
+    justify-content: center;
+    margin-bottom: 2%;
+    margin-top: 0.7%;
 }
 
 /* BARRE DE PROGRESSION */
 .progress-container {
-    width: 55.5%;
+    width: 100%;
     background-color: #ddd;
-    border-radius: 5px;
     overflow: hidden;
     margin-right: 8%;
 }
@@ -111,6 +138,42 @@ span{
 }
 
 .bouton:hover {
+    background-color: #a29082;
+}
+
+.boutonform {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    color: #fff;
+    background-color: #1f1c1a;
+    border: 0px;
+    cursor: pointer;
+    margin-top: 2%;
+}
+
+.boutonform:hover {
+    background-color: #a29082;
+}
+
+.boutonresult {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    color: #fff;
+    background-color: #1f1c1a;
+    cursor: pointer;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+
+.boutonresult:hover {
     background-color: #a29082;
 }
 
@@ -172,4 +235,40 @@ span{
  -webkit-user-select: none;
  -ms-user-select: none; 
  user-select: none; 
+}
+
+/* -------------------------------------------- */
+/* -----------FORMULAIRE BOOTSTRAP------------- */
+/* -------------------------------------------- */
+
+input{
+    background-color: #f9f7e4;
+}
+
+label{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* APPARANCE DES INPUTS */
+input[type="text"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+input{
+    background-color: #f9f7e4;
+    border-radius: 0px;
+    border: 0px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 2%;
+}
+
+input[type="email"]{
+    background-color: #f9f7e4;
+    border-radius: 0px;
+    border: 0px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 1%;
 }
