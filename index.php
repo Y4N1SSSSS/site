@@ -1,5 +1,12 @@
 <?php require_once 'php/Config.php';
-  session_start(); ?>
+  session_start(); 
+  try{
+    $pdo = new PDO(
+        "mysql:host=$host;dbname=$dbname;charset=utf8", $user, $password);
+   }
+   catch(PDOException $e){
+      echo $e->getMessage();
+   }?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -132,18 +139,17 @@
     <input type="submit" value="Commenter"/>
   </form>
   <?php
-  $requete='SELECT * FROM article';
+    $requete='SELECT * FROM article ORDER BY ID_article DESC LIMIT 5';
     $resultats=$pdo->query($requete);
-    $article=$resultats->fetch(PDO::FETCH_ASSOC);
+    $article=$resultats->fetchAll(PDO::FETCH_ASSOC);
     $resultats->closeCursor();
   ?>
-    <section>
-    <h1><?php echo $article["titre"];?></h1>
-    <em>Rédigé le <?php echo $article["Date_article"];?></em><br>
-    <p> <?php echo $article["texte"]; ?> </p>
-</section>
-
-
-
-
+  <section> 
+    <?php foreach($article as $commentaire): ?>
+      <h1><?php echo $commentaire["Titre"];?></h1>
+      <em>Rédigé le <?php echo $commentaire["Date_article"];?></em><br>
+      <p> <?php echo $commentaire["Contenue"]; ?> </p>
+    <?php endforeach; ?>
+  </section>
+  <a href="pages/blog.php"> Voir plus </a>
 </article>
