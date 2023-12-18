@@ -54,10 +54,10 @@
         else{
           echo(' 
           <li class="nav-item">
-            <a class="co" href="../php/Connexion.php">Connexion</a>
+            <a class="nav-link" href="../php/Connexion.php">Connexion</a>
           </li>
           <li class="nav-item">
-            <a class="co" href="../php/InscriptionForm.php">Inscription</a>
+            <a class="nav-link" href="../php/InscriptionForm.php">Inscription</a>
           </li>
         </ul>
       </div>
