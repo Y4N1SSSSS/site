@@ -41,13 +41,11 @@
 
         <?php if(isset($_SESSION["nom"])){
           echo(' 
-          <li class="nav-item">
-          <p class="nav-link">'
-          .$_SESSION["nom"].'</p>
-        </li>
           </ul>
             </div>
-            <a class="nav-link" href="php/logout.php">
+            <a class="ms-4 co">'
+            .$_SESSION["nom"].'</a>
+            <a class="ms-2 co" href="php/logout.php">
               <img width="32px" height="32px" src="images/deco.png" alt="deco">
             </a>
           ');
