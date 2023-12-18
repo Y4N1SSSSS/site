@@ -4,9 +4,9 @@ src: url("../font/Poppins-Medium.ttf");
 }
 
 @font-face {        
-    font-family: PoppinsBold;
-    src: url("../font/Poppins-Bold.ttf");
-    }
+font-family: PoppinsBold;
+src: url("../font/Poppins-Bold.ttf");
+}
 
 .couleurnav{
 background-color: #f9f7e4;
@@ -61,82 +61,119 @@ bottom: 7vh;
 width: 100%;
 }
 
+@media screen and (max-width: 1000px) {
+.owl-dots {
+position: absolute;
+bottom: 5vh;
+width: 100%;
+}
+}
+
+
 .owl-dot {
 display: inline-block;
 margin: 0 2px;
-margin:auto;
+margin:auto !important;
 }
 
 .imgcarrousel1{
-    background-image: url('../images/carrousel1.png');
+background-image: url('../images/carrousel1.png');
 }
 
 .imgcarrousel2{
-    background-image: url('../images/carrousel2.png');
+background-image: url('../images/carrousel2.png');
 }
 
 .imgcarrousel3{
-    background-image: url('../images/carrousel3.png'); 
-    width:100%;
+background-image: url('../images/carrousel3.png'); 
+width:100%;
 }
 
 .ligne-arrondie {
-    width: 75px;
-    height: 5px; 
-    background-color: #a29082; 
-    border-radius: 5px; 
-    justify-content: center;
-    margin-top: 0.7%;
+width: 75px;
+height: 5px; 
+background-color: #a29082; 
+border-radius: 5px; 
+justify-content: center;
+margin-top: 0.7%;
 }
 
 .titres{
-    font-family: Poppins;
-    text-align: center;
-    margin-bottom: -0.08%;
-    font-weight: bolder;
-    margin-top: 2%;
-    text-transform: uppercase;
+font-family: Poppins;
+text-align: center;
+margin-bottom: -0.08%;
+font-weight: bolder;
+margin-top: 2%;
+text-transform: uppercase;
 }
 
 .bouton {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    text-align: center;
-    text-decoration: none !important;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-    color: #fff;
-    background-color: #1f1c1a;
-    cursor: pointer;
-    margin-right: 2%;
+display: inline-block;
+padding: 10px 20px;
+font-size: 16px;
+text-align: center;
+text-decoration: none !important;
+transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+color: #fff;
+background-color: #1f1c1a;
+cursor: pointer;
+margin-right: 2%;
 }
 
 .bouton:hover {
-    background-color: #a29082;
+background-color: #a29082;
 }
 
 .co{
-    font-family: PoppinsMedium;
-    font-weight: bolder;
-    text-decoration: none;
-    display: inline-block;
-    font-size: large;
-    font-style: italic;
-    color: #1f1c1a !important; 
+font-family: PoppinsMedium;
+font-weight: bolder;
+text-decoration: none;
+display: inline-block;
+font-size: large;
+font-style: italic;
+color: #1f1c1a !important; 
 }
 
 .rotationlogo{
-    transform: rotate(180deg);
+transform: rotate(180deg);
 }
 
 .card-text{
-    text-align: center!important;
+text-align: center!important;
 }
 
 .policecarte {
-    font-family: PoppinsMedium;
+font-family: PoppinsMedium;
 }
 
 .policecartesimple{
-    font-family: Poppins;
+font-family: Poppins;
+}
+
+input{
+background-color: #f9f7e4;
+}
+
+label{
+text-transform: uppercase;
+font-weight: bold;
+}
+
+form input[type="text"],
+form textarea {
+background-color: #f9f7e4;
+border-radius: 0;
+border: 0;
+margin-top: 1%;
+margin-bottom: 1%;
+padding: 2%;
+width: 100%;
+}
+
+.grande-zone-texte {
+height: 150px; 
+}
+
+.texteitalic{
+font-style: italic;
 }

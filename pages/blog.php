@@ -9,23 +9,43 @@ include '../php/header.php';
       echo $e->getMessage();
    }?>
 
-<article class="Blog">
-  <form action="php/ajout.php" method="GET">
-    <div> <label for="titre"> Titre : </label> <input class="border" type="text" name="titre" required="required"> </div>
-    <div> <label for="texte"> texte : </label> <input class="border" type="text" name="texte" required="required"> </div>
-    <input type="submit" value="Commenter"/>
-  </form>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="js/jquery-3.6.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<title>Blog</title>
+
+<article class="Blog mt-5">
   <?php
     $requete='SELECT * FROM article ORDER BY ID_article DESC';
     $resultats=$pdo->query($requete);
     $article=$resultats->fetchAll(PDO::FETCH_ASSOC);
     $resultats->closeCursor();
   ?>
-  <section> 
-    <?php foreach($article as $commentaire): ?>
-      <h1><?php echo $commentaire["Titre"];?></h1>
-      <em>Rédigé le <?php echo $commentaire["Date_article"];?></em><br>
-      <p> <?php echo $commentaire["Contenue"]; ?> </p>
+  <div class="mt-5">
+  <h2 class="titres">Retrouvez-ici tous les commentaires déposés par les utilisateurs</h2>
+  <div class="d-flex justify-content-center">
+  <div class="ligne-arrondie"></div>
+  </div>
+  </div>
+  <section class="row mt-5">
+    <?php foreach ($article as $commentaire): ?>
+        <div class="col-md-4 mt-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title policecarte"><?php echo $commentaire["Titre"]; ?></h5>
+                    <p class="card-text policecartesimple"><?php echo $commentaire["Contenue"]; ?></p>
+                    <p class="card-text policecartesimple"><small class="text-muted">Rédigé le <?php echo $commentaire["Date_article"]; ?></small></p>
+                </div>
+            </div>
+        </div>
     <?php endforeach; ?>
-  </section>
+</section>
+
 </article>
