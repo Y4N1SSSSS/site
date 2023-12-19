@@ -196,6 +196,20 @@ ac fames a vitae enim.
           </div>
       </div>
   </form>
+  <form action="php/suppr.php" method="GET">
+        <select name="ID_article" required="required"> 
+        <?php
+            foreach($article as $commentaire):
+        ?>
+            <option value="<?php echo $commentaire["ID_article"];?>"> <?php echo $commentaire["Titre"];?> </option>
+        <?php
+            endforeach;
+        ?>
+            
+        </select><br/><br/>
+     
+        <input type="submit" value="Supprimer"/>
+    </form>
 <?php else : ?>
   <div class="container mt-2">
       <div class="row justify-content-center">
@@ -249,20 +263,6 @@ ac fames a vitae enim.
   <div class="mt-5 d-flex justify-content-center">
   <a class="bouton mb-5" href="pages/blog.php"> Voir tous les commentaires </a>
   </div>
-  <form action="php/suppr.php" method="GET">
-        <select name="ID_article" required="required"> 
-        <?php
-            foreach($article as $commentaire):
-        ?>
-            <option value="<?php echo $commentaire["ID_article"];?>"> <?php echo $commentaire["Titre"];?> </option>
-        <?php
-            endforeach;
-        ?>
-            
-        </select><br/><br/>
-     
-        <input type="submit" value="Supprimer"/>
-    </form>
 </article>
 </section>
 <body>
