@@ -92,7 +92,6 @@ try{
   </div>
 </nav>
 
-
 <section id="carrousel">
 
 <div class="owl-carousel owl-theme">
@@ -117,8 +116,6 @@ try{
 <script src="js/carrousel.js"></script>
 
 </section>
-
-
 
 <section id="contenu">
 
