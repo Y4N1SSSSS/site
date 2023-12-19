@@ -15,18 +15,33 @@ require "headerconnexion.php";
 
 <?php 
 session_start();
-if ( isset($_GET['done'])){
-$mdp = $_GET['mdp'];
-$nom = $_GET['nom'];
-$_SESSION['nom'] = $nom;
-$_SESSION['mdp'] = $mdp;
-}
-
 try {
   $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $user , $password);
   $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-  $sql = "SELECT * FROM utilisateur WHERE Nom_user=? AND Mdp_user=?";
+} 
+catch (PDOException $e) {
+  die("La connexion a échoué: " . $e->getMessage());
+}
+if ( isset($_GET['done'])){
+  $mdp = $_GET['mdp'];
+  $nom = $_GET['nom'];
+  $_SESSION['nom'] = $nom;
+  $_SESSION['mdp'] = $mdp;
+  
+$requete='SELECT * FROM utilisateur WHERE IS_Admin = 1';
+$resultats=$pdo->query($requete);
+$article=$resultats->fetchAll(PDO::FETCH_ASSOC);
+foreach ($article as $accadmin):
+  if( $accadmin["Nom_user"] == $_SESSION['nom']){
+    $_SESSION['admin'] = 1;
+  }
+  else{
+    $_SESSION['admin'] = 0;
+  }
+endforeach;
+$resultats->closeCursor();
+}
+$sql = "SELECT * FROM utilisateur WHERE Nom_user=? AND Mdp_user=?";
   $stmt = $pdo->prepare($sql);
   $stmt->execute([$nom, $mdp]);
 
@@ -35,7 +50,4 @@ try {
   } else {
     echo (' ');
   }
-} catch (PDOException $e) {
-  die("La connexion a échoué: " . $e->getMessage());
-}
 ?>
