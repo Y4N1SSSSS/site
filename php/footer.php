@@ -29,7 +29,6 @@
                     <a href="https://www.instagram.com/" target="_blank"><img src="../images/I.png" class='imagesfooter'></a>
             </div>
             
-
             <!-- Colonne Logo -->
             <div class="col-md-4">
                 <h5>Logo</h5>

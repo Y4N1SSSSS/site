@@ -49,3 +49,8 @@ include '../php/header.php';
 </section>
 
 </article>
+
+    <!-- Ajout du footer -->
+    <?php
+        include "../php/footer.php" ;
+    ?>
