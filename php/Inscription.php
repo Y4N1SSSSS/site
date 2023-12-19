@@ -15,6 +15,19 @@ try{
 if ( isset($_GET['done'])){
 $nom = $_GET['nom'];
 $mdp = $_GET['mdp'];
+$requete='SELECT * FROM utilisateur WHERE IS_Admin = 1';
+$resultats=$pdo->query($requete);
+$article=$resultats->fetchAll(PDO::FETCH_ASSOC);
+foreach ($article as $accadmin):
+  if( $accadmin["Nom_user"] == $_SESSION['nom']){
+    $_SESSION['admin'] = 1;
+  }
+  else{
+    $_SESSION['admin'] = 0;
+  }
+endforeach;
+$resultats->closeCursor();
+}
 
     $verify_nom = $pdo->prepare("select Nom_user from utilisateur where Nom_user=? limit 1");
     $verify_nom->execute(array($nom));
@@ -30,7 +43,6 @@ $mdp = $_GET['mdp'];
                 $_SESSION['nom'] = $nom;
                 header('Location: ../index.php');
     }
-}
 }
 ?>
 
