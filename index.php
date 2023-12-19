@@ -93,7 +93,6 @@ try{
   </div>
 </nav>
 
-
 <section id="carrousel">
 
 <div class="owl-carousel owl-theme">
@@ -118,8 +117,6 @@ try{
 <script src="js/carrousel.js"></script>
 
 </section>
-
-
 
 <section id="contenu">
 
@@ -216,6 +213,12 @@ ac fames a vitae enim.
           </div>
       </div>
   </form>
+  <?php
+  $requete='SELECT * FROM article ORDER BY ID_article DESC LIMIT 6';
+  $resultats=$pdo->query($requete);
+  $article=$resultats->fetchAll(PDO::FETCH_ASSOC);
+  $resultats->closeCursor();
+  ?>
   <form action="php/suppr.php" method="GET">
         <select name="ID_article" required="required"> 
         <?php
@@ -224,10 +227,8 @@ ac fames a vitae enim.
             <option value="<?php echo $commentaire["ID_article"];?>"> <?php echo $commentaire["Titre"];?> </option>
         <?php
             endforeach;
-        ?>
-            
+        ?>  
         </select><br/><br/>
-     
         <input type="submit" value="Supprimer"/>
     </form>
 <?php else : ?>
@@ -264,22 +265,7 @@ ac fames a vitae enim.
             </div>
         <?php endforeach; ?>
     </div>
-<div class="container">
-  <div class="row">
-      <?php foreach($article as $commentaire): ?>
-          <div class="col-md-4">
-              <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title policecarte"><?php echo $commentaire["Titre"]; ?></h5>
-                    <p class="card-text policecartesimple"><?php echo $commentaire["Contenue"]; ?></p>
-                    <p class="card-text policecartesimple"><small class="text-muted">Rédigé le <?php echo $commentaire["Date_article"]; ?> </small></p>
-                  </div>
-              </div>
-          </div>
-      <?php endforeach; ?>
   </div>
-</div>
-
   <div class="mt-5 d-flex justify-content-center">
   <a class="bouton mb-5" href="pages/blog.php"> Voir tous les commentaires </a>
   </div>
