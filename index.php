@@ -121,7 +121,7 @@ try{
 <section id="contenu">
 
 <div>
-<h2 class="titres">En quoi consiste l'événement ?</h1>
+<h2 class="titres">En quoi consiste l'événement ?</h2>
 <div class="d-flex justify-content-center">
 <div class="ligne-arrondie"></div>
 </div>
