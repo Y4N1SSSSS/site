@@ -45,8 +45,7 @@ try{
       </li>
       <li class="nav-item">
         <a class="nav-link" href="pages/planning.php">Planning</a>
-      </li>
-
+      </li>   
       <?php if(isset($_SESSION["nom"])){
         echo(' 
         </ul>
@@ -57,7 +56,6 @@ try{
             <img width="32px" height="32px" class="rotationlogo" src="images/decov2.png" alt="deco">
           </a>
         ');
-      } 
       else{
         echo(' 
         <li class="nav-item">
@@ -236,7 +234,7 @@ ac fames a vitae enim.
   <a class="bouton mb-5" href="pages/blog.php"> Voir tous les commentaires </a>
   </div>
   <form action="php/suppr.php" method="GET">
-        <select class="border" name="ID_article" required="required"> 
+        <select name="ID_article" required="required"> 
         <?php
             foreach($article as $commentaire):
         ?>
@@ -247,7 +245,7 @@ ac fames a vitae enim.
             
         </select><br/><br/>
      
-        <input type="submit" name="ID_article" value="Supprimer l'article"/>
+        <input type="submit" value="Supprimer"/>
     </form>
 </article>
 </section>
