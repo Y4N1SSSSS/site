@@ -1,6 +1,7 @@
 <?php
 require_once 'Config.php';
 require "header.php";
+
 try{
     $pdo = new PDO(
         "mysql:host=$host;dbname=$dbname;charset=utf8", $user, $password);
