@@ -24,53 +24,72 @@ try{
 </head>
 
 <nav class="navbar navbar-expand-lg couleurnav">
-<div class="container">
-  <a class="navbar-brand" href="index.php">
-  <img src="images/perso.png" class="taillelogo" alt="Restaure Ton Patrimoine">
-  </a>
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse text-center" id="navbarNav">
-    <ul class="navbar-nav ms-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="index.php">Accueil</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="pages/participation.php">Participation</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="pages/donation.php">Donation</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="pages/planning.php">Planning</a>
-      </li>   
-      <?php if(isset($_SESSION["nom"])){
-        echo(' 
-        </ul>
-          </div>
-          <a class="ms-4 co">'
-          .$_SESSION["nom"].'</a>
-          <a class="ms-2 co" href="php/logout.php">
-            <img width="32px" height="32px" class="rotationlogo" src="images/decov2.png" alt="deco">
-          </a>
-        ');}
-      else{
-        echo(' 
+  <div class="container">
+    <a class="navbar-brand" href="index.php">
+      <img src="images/perso.png" class="taillelogo" alt="Restaure Ton Patrimoine">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse text-center" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" href="php/Connexion.php">Connexion</a>
+          <a class="nav-link" href="index.php">Accueil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="php/InscriptionForm.php">Inscription</a>
+          <a class="nav-link" href="pages/participation.php">Participation</a>
         </li>
-      </ul>
-    </div>
+        <li class="nav-item">
+          <a class="nav-link" href="pages/donation.php">Donation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pages/planning.php">Planning</a>
+        </li>   
+        <?php if(isset($_SESSION["nom"])){
+          $requete='SELECT * FROM utilisateur WHERE IS_Admin = 1';
+          $resultats=$pdo->query($requete);
+          $article=$resultats->fetchAll(PDO::FETCH_ASSOC);
+          foreach ($article as $accadmin):
+            if( $_SESSION['admin'] == 1){
+              echo(' </ul>
+            </div>
+            <a href="pages/Admin.php" class="ms-4 co"> Admin </a>
+            <a class="ms-4 co">'
+            .$_SESSION["nom"].'</a>
+            <a class="ms-2 co" href="php/logout.php">
+              <img width="32px" height="32px" class="rotationlogo" src="images/decov2.png" alt="deco">
+            </a>
           ');
-      }
-      ?>
-</div>
+            }
+           
+          else{
+            echo(' </ul>
+            </div>
+            <a class="ms-4 co">'
+            .$_SESSION["nom"].'</a>
+            <a class="ms-2 co" href="php/logout.php">
+              <img width="32px" height="32px" class="rotationlogo" src="images/decov2.png" alt="deco">
+            </a>
+          ');
+            }
+          endforeach;
+            $resultats->closeCursor();
+          
+        }
+        else{
+          echo(' 
+          <li class="nav-item">
+            <a class="nav-link" href="php/Connexion.php">Connexion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="php/InscriptionForm.php">Inscription</a>
+          </li>
+        </ul>
+      </div>
+            ');
+        }
+        ?>
+  </div>
 </nav>
 
 
