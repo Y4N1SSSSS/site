@@ -1,0 +1,232 @@
+
+    
+    .couleurnav{
+    background-color: #f9f7e4;
+    }
+    
+    nav > div > div > ul > li{
+    font-family: PoppinsMedium;
+    text-decoration: none;
+    }
+    
+    .navbar-brand {
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+    .nav-link {
+    display: inline-block;
+    position: relative;
+    font-size: large;
+    }
+    
+    .nav-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #1f1c1a; 
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out, text-decoration-thickness 0.25s ease-out;
+    }
+    
+    .nav-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    }
+    
+    .ligne-arrondie {
+    width: 75px;
+    height: 5px; 
+    background-color: #a29082; 
+    border-radius: 5px; 
+    justify-content: center;
+    margin-top: 0.7%;
+    }
+    
+    .titres{
+    font-family: Poppins;
+    text-align: center;
+    margin-bottom: -0.08%;
+    font-weight: bolder;
+    margin-top: 2%;
+    text-transform: uppercase;
+    }
+    
+    .bouton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none !important;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    color: #fff;
+    background-color: #1f1c1a;
+    cursor: pointer;
+    margin-right: 2%;
+    }
+    
+    .bouton:hover {
+    background-color: #a29082;
+    }
+    
+    .co{
+    font-family: PoppinsMedium;
+    font-weight: bolder;
+    text-decoration: none;
+    display: inline-block;
+    font-size: large;
+    font-style: italic;
+    color: #1f1c1a !important; 
+    }
+    
+    .rotationlogo{
+    transform: rotate(180deg);
+    }
+    
+    /* FOOTER */
+    .footer{
+        background-color: #1f1c1a;
+        color: #f9f7e4;
+    }
+    
+    .textFooter{
+        color: #f9f7e4;
+        margin-bottom: 3%;
+    }
+    
+    .titresFooter{
+        color: #f9f7e4;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 10%;
+    }
+    
+    .imagesfooter {
+        width: 3.25vw;
+        margin-right: 8%;
+        height: auto;
+        transition: transform 0.3s;
+    }
+    
+    .imagesfooter:hover {
+        transform: scale(1.2); 
+    }
+    
+    .logo{
+        margin-top: 4%;
+        margin-left: 35%;
+        width:10vw;
+        height:auto;
+    }
+    
+    /* ------- */
+    
+    input{
+    background-color: #f9f7e4;
+    }
+    
+    label{
+    text-transform: uppercase;
+    font-weight: bold;
+    }
+    
+    form input[type="text"],
+    form textarea {
+    background-color: #f9f7e4;
+    border-radius: 0;
+    border: 0;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 2%;
+    width: 100%;
+    }
+    
+    .grande-zone-texte {
+    height: 150px; 
+    }
+    
+    .texteitalic{
+    font-style: italic;
+    }
+    
+    .taillelogo{
+        width: 5%;
+    }
+    
+    .card {
+        border: 1px solid #ddd; 
+        border-radius: 10px; 
+    }
+    
+    .card-title {
+        color: #333; 
+        font-size: 1.25rem; 
+    }
+    
+    
+/* -------------------------------------------- */
+/* -----------FORMULAIRE BOOTSTRAP------------- */
+/* -------------------------------------------- */
+
+input{
+    background-color: #f9f7e4;
+}
+
+label{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* APPARANCE DES INPUTS */
+input[type="text"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+input{
+    background-color: #f9f7e4;
+    border-radius: 0px;
+    border: 0px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 2%;
+}
+
+.boutonform {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    color: #fff;
+    background-color: #1f1c1a;
+    border: 0px;
+    cursor: pointer;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    padding: 1.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.boutonform:hover {
+    background-color: #a29082;
+}
+
+.ligne-container{
+    display: flex;
+    justify-content: center;
+}
+
+/* ENLEVER LE SURLIGNAGE DU TEXTE */
+.NS
+{
+ -moz-user-select: none;
+ -webkit-user-select: none;
+ -ms-user-select: none; 
+ user-select: none; 
+}
