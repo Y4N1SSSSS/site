@@ -201,3 +201,18 @@ height: 150px;
 .texteitalic{
 font-style: italic;
 }
+
+.taillelogo{
+    width: 5%;
+}
+
+.card {
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+}
+
+.card-title {
+    color: #333; 
+    font-size: 1.25rem; 
+}
+

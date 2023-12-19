@@ -202,14 +202,13 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 4%;
 }
 
 .flexEUR{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 7%;
+    margin-bottom: 5%;
 }
 
 .flexd{
