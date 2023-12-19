@@ -50,8 +50,10 @@
                 <input type="text" class="form-control" id="postal" name="postal" placeholder="Entrez votre code postal" required>
             </div>
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12 d-flex justify-content-end">
         <button type="submit" class="boutonform NS">Envoyer</button>
+        </div>
+        <div class='ligne-container'><a class='boutonresult NS' href='../php/listeParticipant.php'>Liste de tous les participants</a></div>
     </div>
     </form>
 </div>

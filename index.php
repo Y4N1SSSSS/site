@@ -12,6 +12,7 @@ try{
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="images/favicon_taille.ico" type="image/x-icon">
 <script src="js/jquery-3.6.4.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
@@ -25,7 +26,7 @@ try{
 <nav class="navbar navbar-expand-lg couleurnav">
 <div class="container">
   <a class="navbar-brand" href="index.php">
-  <img src="logopasencorela.png" alt="Restaure Ton Patrimoine">
+  <img src="images/perso.png" class="taillelogo" alt="Restaure Ton Patrimoine">
   </a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +39,7 @@ try{
         <a class="nav-link" href="index.php">Accueil</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="pages/inscription.php">Rejoignez-nous</a>
+        <a class="nav-link" href="pages/participation.php">Participation</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="pages/donation.php">Donation</a>
@@ -215,6 +216,20 @@ ac fames a vitae enim.
   $resultats->closeCursor();
   ?>
 
+<div class="container mt-5">
+    <div class="row">
+        <?php foreach ($article as $commentaire): ?>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title policecarte"><?php echo $commentaire["Titre"]; ?></h5>
+                        <p class="card-text policecartesimple"><?php echo $commentaire["Contenue"]; ?></p>
+                        <p class="card-text policecartesimple"><small class="text-muted">Rédigé le <?php echo $commentaire["Date_article"]; ?></small></p>
+                    </div>
+                </div>
+            </div>
+        <?php endforeach; ?>
+    </div>
 <div class="container">
   <div class="row">
       <?php foreach($article as $commentaire): ?>
@@ -230,6 +245,7 @@ ac fames a vitae enim.
       <?php endforeach; ?>
   </div>
 </div>
+
   <div class="mt-5 d-flex justify-content-center">
   <a class="bouton mb-5" href="pages/blog.php"> Voir tous les commentaires </a>
   </div>

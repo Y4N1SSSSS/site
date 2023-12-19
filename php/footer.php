@@ -28,11 +28,12 @@
                     <a href="https://www.facebook.com/" target="_blank"><img src="../images/F.png" class='imagesfooter'></a>
                     <a href="https://www.instagram.com/" target="_blank"><img src="../images/I.png" class='imagesfooter'></a>
             </div>
+            
 
             <!-- Colonne Logo -->
             <div class="col-md-4">
                 <h5>Logo</h5>
-                <img src="path/to/your/logo.png" alt="Logo de l'association" class="img-fluid">
+                <img src="../images/logo.png" alt="Logo de l'association" class="logo">
             </div>
         </div>
     </div>
