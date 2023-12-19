@@ -23,7 +23,7 @@ try{
 <link rel="stylesheet" href="css/style.css">
 <title>Accueil</title>
 </head>
-
+<body>
 <nav class="navbar navbar-expand-lg couleurnav">
   <div class="container">
     <a class="navbar-brand" href="index.php">
