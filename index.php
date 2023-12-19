@@ -273,9 +273,9 @@ ac fames a vitae enim.
             <!-- Colonne Contacts -->
             <div class="col-md-4">
                 <h4 class="titresFooter">Contact</h4>
-                <p class="textFooter">Adresse: 123 Rue de l'Association</p>
-                <p class="textFooter">Email: info@association.org</p>
-                <p class="textFooter">Téléphone: +1 234 567 890</p>
+                <p class="textFooter">Adresse: 28 Rue des Cerisiers, 43100 Blazac, France</p>
+                <p class="textFooter">Email: restauretonpatrimoine@association.org</p>
+                <p class="textFooter">Téléphone: +33 04 78 56 89 45</p>
             </div>
 
             <!-- Colonne Réseaux sociaux -->
