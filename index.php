@@ -98,22 +98,22 @@ try{
 <div class="owl-carousel owl-theme">
 <div class="item imgcarrousel1">
   <div class="overlay-content">
-    <h1 class="text-center textecarrousel">Restaure ton patrimoine</h1>
+    <h1 class="text-center textecarrousel"> &nbsp; </h1>
   </div>
 </div>
 <div class="item imgcarrousel2">
   <div class="overlay-content">
-    <h1 class="text-center textecarrousel">Vous aussi faites partie de l'aventure</h1>
+    <h1 class="text-center textecarrousel"> &nbsp; </h1>
   </div>
 </div>
 <div class="item imgcarrousel3">
   <div class="overlay-content">
-    <h1 class="text-center textecarrousel">Inscrivez-vous dès maintenant</h1>
+    <h1 class="text-center textecarrousel"> &nbsp; </h1>
   </div>
 </div>
 </div>
 
-<script src="js/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script src="js/carrousel.js"></script>
 
 </section>
@@ -300,7 +300,6 @@ ac fames a vitae enim.
     </div>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 

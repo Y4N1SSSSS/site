@@ -39,7 +39,7 @@ var totalDons = $totalDons;
     <img class="imagedon" src="../images/donsEUR.png"> 
     <span class="spanD"><span class="titredon">Soutenez Notre Patrimoine National</span><br><br>
         Cher(e) ami(e) de la culture,
-        Votre don contribue à la préservation de notre riche patrimoine français. Aidez-nous à protéger nos trésors historiques et culturels. Chaque euro compte.</span>
+        votre don contribue à la préservation de notre riche patrimoine français. Aidez-nous à protéger nos trésors historiques et culturels. Chaque € compte !</span>
 </div>
 <!-- Section en flexbox pour la barre de progression et les boutons -->
 <div class="flexEUR">
@@ -104,7 +104,7 @@ xhr.send("amount=" + amount);
     </div>
     <!-- BOUTON POUR LES DONS ET INFORMATIONS -->
     <div class="mt-5 d-flex justify-content-center mb-5">
-    <a class="bouton NS">Faire un don</a> <a class="bouton NS">En savoir plus</a>
+    <a class="bouton NS">Faire un don matériel</a> <a class="bouton NS">En savoir plus</a>
 </div>
 <!-- Javascript -->
 <script src="../js/scriptdon.js"></script>

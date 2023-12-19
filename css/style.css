@@ -78,15 +78,17 @@ margin:auto !important;
 
 .imgcarrousel1{
 background-image: url('../images/carrousel1.png');
+background-size: cover;
 }
 
 .imgcarrousel2{
 background-image: url('../images/carrousel2.png');
+background-size: cover;
 }
 
 .imgcarrousel3{
 background-image: url('../images/carrousel3.png'); 
-width:100%;
+background-size: cover;
 }
 
 .ligne-arrondie {

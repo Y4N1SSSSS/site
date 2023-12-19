@@ -50,6 +50,8 @@ include '../php/header.php';
 
 </article>
 
+<div class="mt-5"></div>
+
     <!-- Ajout du footer -->
     <?php
         include "../php/footer.php" ;
