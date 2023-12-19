@@ -288,8 +288,7 @@ ac fames a vitae enim.
             
             <!-- Colonne Logo -->
             <div class="col-md-4">
-                <h5>Logo</h5>
-                <img src="../images/logo.png" alt="Logo de l'association" class="logo">
+                <img src="images/logo.png" alt="Logo de l'association" class="logo">
             </div>
         </div>
     </div>
