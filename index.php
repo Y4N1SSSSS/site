@@ -223,9 +223,9 @@ ac fames a vitae enim.
           <div class="col-md-4">
               <div class="card">
                   <div class="card-body">
-                      <h5 class="card-title policecarte"><?php echo $commentaire["Titre"]; ?></h5>
-                      <p class="card-text policecartesimple"><?php echo $commentaire["Contenue"]; ?></p>
-                      <p class="card-text policecartesimple"><small class="text-muted">Rédigé le <?php echo $commentaire["Date_article"]; ?></small></p>
+                    <h5 class="card-title policecarte"><?php echo $commentaire["Titre"]; ?></h5>
+                    <p class="card-text policecartesimple"><?php echo $commentaire["Contenue"]; ?></p>
+                    <p class="card-text policecartesimple"><small class="text-muted">Rédigé le <?php echo $commentaire["Date_article"]; ?> </small></p>
                   </div>
               </div>
           </div>
@@ -235,5 +235,19 @@ ac fames a vitae enim.
   <div class="mt-5 d-flex justify-content-center">
   <a class="bouton mb-5" href="pages/blog.php"> Voir tous les commentaires </a>
   </div>
+  <form action="php/suppr.php" method="GET">
+        <select class="border" name="ID_article" required="required"> 
+        <?php
+            foreach($article as $commentaire):
+        ?>
+            <option value="<?php echo $commentaire["ID_article"];?>"> <?php echo $commentaire["Titre"];?> </option>
+        <?php
+            endforeach;
+        ?>
+            
+        </select><br/><br/>
+     
+        <input type="submit" name="ID_article" value="Supprimer l'article"/>
+    </form>
 </article>
 </section>
