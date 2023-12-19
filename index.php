@@ -55,7 +55,7 @@ try{
           <a class="ms-2 co" href="php/logout.php">
             <img width="32px" height="32px" class="rotationlogo" src="images/decov2.png" alt="deco">
           </a>
-        ');
+        ');}
       else{
         echo(' 
         <li class="nav-item">
