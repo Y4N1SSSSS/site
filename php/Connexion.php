@@ -21,7 +21,6 @@ if ( isset($_GET['done'])){
     if ($stmt->rowCount() == 1) {
         $_SESSION['nom'] = $nom;
         $_SESSION['mdp'] = $mdp;
-
         $requete = 'SELECT * FROM utilisateur WHERE Nom_user = :nom';
         $statement = $pdo->prepare($requete);
         $statement->bindParam(':nom', $nom, PDO::PARAM_STR);
