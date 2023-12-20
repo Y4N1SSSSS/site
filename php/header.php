@@ -46,7 +46,7 @@
                 if( $_SESSION['admin'] == 1){
                   echo(' </ul>
                   </div>
-                <a href="pages/Admin.php" class="ms-4 co"> Admin </a>
+                <a href="../pages/Admin.php" class="ms-4 co"> Admin </a>
                 <a class="ms-4 co">'
                 .$_SESSION["nom"].'</a>
                 <a class="ms-2 co" href="php/logout.php">
