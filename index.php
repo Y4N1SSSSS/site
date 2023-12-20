@@ -51,8 +51,8 @@ try{
                 if( $_SESSION['admin'] == 1){
                   echo(' </ul>
                   </div>
-                <a href="pages/Admin.php" class="ms-4 co"> Admin </a>
-                <a class="ms-4 co">'
+                <a href="pages/Admin.php" class="ms-4 co"> Administration </a>
+                <a class="ms-4 co texteitalic">'
                 .$_SESSION["nom"].'</a>
                 <a class="ms-2 co" href="php/logout.php">
                   <img width="32px" height="32px" class="rotationlogo" src="images/decov2.png" alt="deco">
@@ -62,7 +62,7 @@ try{
           else{
             echo(' </ul>
             </div>
-            <a class="ms-4 co">'
+            <a class="ms-4 co texteitalic">'
             .$_SESSION["nom"].'</a>
             <a class="ms-2 co" href="php/logout.php">
               <img width="32px" height="32px" class="rotationlogo" src="images/decov2.png" alt="deco">
