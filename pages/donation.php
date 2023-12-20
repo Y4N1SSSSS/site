@@ -103,7 +103,7 @@ var totalDons = $totalDons;
 <a class="bouton NS" id="ouvrirPopup" onclick="toggleDonationForm()">Faire un don matériel</a>
 <a class="bouton NS">En savoir plus</a>
 </div>
-
+</div>
 <!-- Emplacement pour la nouvelle div avec le formulaire -->
 <div id="dynamicFormContainer"></div>
 
@@ -129,16 +129,17 @@ function toggleDonationForm() {
                 <!-- Formulaire pour le don matériel -->
                 <form id="formDonObjet" action="../php/donationobjet.php" method="post">
                     <label for="type_objet">Type d'objet :</label>
-                    <select name="type_objet" required>
-                        <option value="outil">Outil</option>
-                        <option value="matierepremiere">Matière première</option>
-                        <option value="meuble">Meuble</option>
+                    <select class="txtoption case" name="type_objet" required>
+                        <option class="txtoption" value="outil">Outil</option>
+                        <option class="txtoption" value="matierepremiere">Matière première</option>
+                        <option class="txtoption" value="meuble">Meuble</option>
                     </select>
+                    <br>
                     <br>
                     <label for="description">Description de l'objet :</label>
                     <textarea name="description" required></textarea>
                     <br>
-                    <button type="submit">Faire le don d'objet</button>
+                    <button class="bouton NS" type="submit">Faire don de le/les objet(s) </button>
                 </form>
                 </div>
             </div>
@@ -162,9 +163,6 @@ function removeDonationForm() {
 }
 </script>
 
-
-
-</div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>

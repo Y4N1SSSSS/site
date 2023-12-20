@@ -64,6 +64,19 @@ span{
     margin-right: 5%;
 }
 
+.txtoption{
+    text-transform: uppercase;
+}
+
+.case{
+    background-color: #f9f7e4;
+    border: 0px;
+    margin-left: 1%;
+    padding-right: 2%;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+}
+
 /* BARRE DE PROGRESSION */
 .progress-text{
     margin-bottom: 5%;

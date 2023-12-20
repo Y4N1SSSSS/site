@@ -137,7 +137,7 @@ ac fames a vitae enim.
     </h4> 
   </div>
   <div class="col-lg-4 d-flex align-items-center justify-content-center">
-  <a class="bouton">S'inscrire</a>
+  <a class="bouton NS">S'inscrire</a>
   </div>
 </div>  
 </div>
@@ -201,7 +201,7 @@ ac fames a vitae enim.
           </div>
           <div class="row justify-content-center">
               <div class="col-md-8 mt-2 d-flex justify-content-center">
-                  <button type="submit" class="bouton">Commenter</button>
+                  <button type="submit" class="bouton NS">Commenter</button>
               </div>
           </div>
       </div>
@@ -242,7 +242,7 @@ ac fames a vitae enim.
     </div>
   </div>
   <div class="mt-5 d-flex justify-content-center">
-  <a class="bouton mb-5" href="pages/blog.php"> Voir tous les commentaires </a>
+  <a class="bouton mb-5 NS" href="pages/blog.php"> Voir tous les commentaires </a>
   </div>
 </article>
 </section>
@@ -254,7 +254,7 @@ ac fames a vitae enim.
             <!-- Colonne Contacts -->
             <div class="col-md-4">
                 <h4 class="titresFooter">Contact</h4>
-                <p class="textFooter">Adresse: 28 Rue des Cerisiers, 43100 Blazac, France</p>
+                <p class="textFooter">Adresse: 28 Rue des Cerisiers, 43100 Blassac, France</p>
                 <p class="textFooter">Email: restauretonpatrimoine@association.org</p>
                 <p class="textFooter">Téléphone: +33 04 78 56 89 45</p>
             </div>
