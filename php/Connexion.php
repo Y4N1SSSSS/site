@@ -21,19 +21,20 @@ if ( isset($_GET['done'])){
     if ($stmt->rowCount() == 1) {
         $_SESSION['nom'] = $nom;
         $_SESSION['mdp'] = $mdp;
+
         $requete = 'SELECT * FROM utilisateur WHERE Nom_user = :nom';
         $statement = $pdo->prepare($requete);
         $statement->bindParam(':nom', $nom, PDO::PARAM_STR);
         $statement->execute();
 
-        $article = $statement->fetchAll(PDO::FETCH_ASSOC);
+        $utilisateur = $statement->fetchAll(PDO::FETCH_ASSOC);  
 
-foreach ($article as $accadmin):
-  if( $_SESSION['nom'] == $accadmin["Nom_user"]){
+  foreach ($utilisateur as $accadmin):
+  if( $accadmin["IS_Admin"] == 1){
     $_SESSION['admin'] = 1;
   }
   else{
-    $_SESSION['admin'] = 0;
+   $_SESSION['admin'] = 0;
   }
 endforeach;
 $statement->closeCursor();
