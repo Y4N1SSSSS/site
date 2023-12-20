@@ -143,7 +143,7 @@ function toggleDonationForm() {
                         <label for="description">Description de l'objet :</label>
                         <textarea name="description" required></textarea>
                         <br>
-                        <button class="bouton NS mb-3" type="submit">Faire don de le/les objet(s) </button>
+                        <button class="bouton NS mb-3" type="submit">Faire la donation d'un/des objet(s) </button>
                     </form>
                 </div>
             </div>

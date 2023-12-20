@@ -42,7 +42,7 @@ try {
         ?>
         <form action="../php/suppr.php" method="GET">
             <div class="d-flex justify-content-center">
-            <select name="ID_article" class="selectadmin" required="required">
+            <select name="ID_article" class="selectadmin case" required="required">
                 <?php foreach ($article as $commentaire) : ?>
                     <option value="<?= $commentaire["ID_article"] ?>"> <?= htmlspecialchars($commentaire["Titre"]) ?> </option>
                 <?php endforeach; ?>
@@ -53,7 +53,7 @@ try {
 
         <div class="mt-5 d-flex justify-content-center">
         <form action="../php/toutsuppr.php" method="GET">
-            <input type="submit" class="bouton NS mb-5" value="Supprimer tous les commentaires"/>
+            <input type="submit" class="btn btn-danger mb-5" value="Supprimer tous les commentaires"/>
         </form>
         </div>
     </div>
@@ -74,9 +74,9 @@ try {
 
     <form action="../php/supprparticipant.php" method="GET">
     <div class="d-flex justify-content-center">
-        <select name="ID_participant" class="selectadmin" required="required">
+        <select name="ID_participant" class="selectadmin txtoption case" required="required">
             <?php foreach ($search as $participant) : ?>
-                <option value="<?= $participant["ID_participant"] ?>"> <?= htmlspecialchars($participant["Nom_participant"]) ?> </option>
+                <option class="txtoption" value="<?= $participant["ID_participant"] ?>"> <?= htmlspecialchars($participant["Nom_participant"]) ?> </option>
             <?php endforeach; ?>
         </select><br /><br/>
         <input type="submit" class="bouton NS ms-1" value="Supprimer"/>
@@ -84,7 +84,7 @@ try {
     </form>
     <div class="mt-5 d-flex justify-content-center">
     <form action="../php/toutsupprparticipant.php" method="GET">
-        <input type="submit" class="bouton NS mb-5" value="Supprimer tous les participants" />
+        <input type="submit" class="btn btn-danger mb-5" value="Supprimer tous les participants" />
     </form>
     </div>
     </div>
