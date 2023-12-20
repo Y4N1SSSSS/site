@@ -1,5 +1,52 @@
 <?php
+session_start();
 require_once 'Config.php';
+
+if ( isset($_GET['done'])){
+    $mdp = $_GET['mdp'];
+    $nom = $_GET['nom'];
+
+    try {
+        $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $user , $password);
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+      } 
+      catch (PDOException $e) {
+        die("La connexion a échoué: " . $e->getMessage());
+      }
+
+    $sql = "SELECT * FROM utilisateur WHERE Nom_user=? AND Mdp_user=?";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute([$nom, $mdp]);
+
+    if ($stmt->rowCount() == 1) {
+        $_SESSION['nom'] = $nom;
+        $_SESSION['mdp'] = $mdp;
+        $requete = 'SELECT * FROM utilisateur WHERE Nom_user = :nom';
+        $statement = $pdo->prepare($requete);
+        $statement->bindParam(':nom', $nom, PDO::PARAM_STR);
+        $statement->execute();
+
+        $article = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+foreach ($article as $accadmin):
+  if( $_SESSION['nom'] == $accadmin["Nom_user"]){
+    $_SESSION['admin'] = 1;
+  }
+  else{
+    $_SESSION['admin'] = 0;
+  }
+endforeach;
+$statement->closeCursor();
+header('Location: ../index.php');
+        exit();
+      }
+      else{
+        $loginfaux=true;
+      }
+      $admin->closeCursor();
+
+}
+
 require "headerconnexion.php";
 ?>
 <head>
@@ -11,6 +58,11 @@ require "headerconnexion.php";
 <article>
   <!-- SECTION DES DONS EN EUROS -->
   <h1 class="titres">CONNEXION</h1>
+  <?php
+  if($loginfaux){
+    echo "Vous avez sélectionné le mauvais login ou mot de passe. Veuillez réessayer ";
+  }
+  ?>
     <div class="ligne-container"> <div class="ligne-arrondie"></div> </div>
     <div class="container mt-3">
 <form method="get" action="" class="row">
@@ -29,47 +81,6 @@ require "headerconnexion.php";
         </div>  
 </form>
 </div>
-
-<?php 
-session_start();
-try {
-  $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $user , $password);
-  $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} 
-catch (PDOException $e) {
-  die("La connexion a échoué: " . $e->getMessage());
-}
-if ( isset($_GET['done'])){
-  $mdp = $_GET['mdp'];
-  $nom = $_GET['nom'];
-  $_SESSION['nom'] = $nom;
-  $_SESSION['mdp'] = $mdp;
-
-$requete='SELECT * FROM utilisateur WHERE IS_Admin = 1';
-$resultats=$pdo->query($requete);
-$article=$resultats->fetchAll(PDO::FETCH_ASSOC);
-foreach ($article as $accadmin):
-  if( $accadmin["Nom_user"] == $_SESSION['nom']){
-    $_SESSION['admin'] = 1;
-  }
-  else{
-    $_SESSION['admin'] = 0;
-  }
-endforeach;
-$resultats->closeCursor();
-}
-$sql = "SELECT * FROM utilisateur WHERE Nom_user=? AND Mdp_user=?";
-  $stmt = $pdo->prepare($sql);
-  $stmt->execute([$nom, $mdp]);
-
-  if ($stmt->rowCount() == 1) {
-    header('Location: ../index.php');
-  } else {
-    echo (' ');
-  }
-
-?>
-</article>
 <?php
         include "footer.php" ;
       ?>

@@ -15,9 +15,11 @@ try{
 if ( isset($_GET['done'])){
 $nom = $_GET['nom'];
 $mdp = $_GET['mdp'];
+
 $requete='SELECT * FROM utilisateur WHERE IS_Admin = 1';
 $resultats=$pdo->query($requete);
 $article=$resultats->fetchAll(PDO::FETCH_ASSOC);
+
 foreach ($article as $accadmin):
   if( $accadmin["Nom_user"] == $_SESSION['nom']){
     $_SESSION['admin'] = 1;
