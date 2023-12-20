@@ -45,7 +45,7 @@ $requete='SELECT * FROM article ORDER BY ID_article';
         <?php
             foreach($search as $participant):
         ?>
-            <option value="<?php echo $participant["ID_particpant"];?>"> <?php echo $participant["Nom_participant"];?> </option>
+            <option value="<?php echo $participant["ID_participant"];?>"> <?php echo $participant["Nom_participant"];?> </option>
         <?php
             endforeach;
         ?>  

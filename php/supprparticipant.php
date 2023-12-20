@@ -11,7 +11,7 @@ try{
     }
 
     // suppression d'un article
-    $requete='DELETE FROM particpant WHERE ID_participant='.$_GET["ID_participant"];
+    $requete='DELETE FROM participant WHERE ID_participant='.$_GET["ID_participant"];
     $suppr=$pdo->exec($requete);
 
     // redirection
