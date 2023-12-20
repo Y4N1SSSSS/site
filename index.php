@@ -205,25 +205,7 @@ ac fames a vitae enim.
               </div>
           </div>
       </div>
-  </form>
-  <?php
-  $requete='SELECT * FROM article ORDER BY ID_article DESC LIMIT 6';
-  $resultats=$pdo->query($requete);
-  $article=$resultats->fetchAll(PDO::FETCH_ASSOC);
-  $resultats->closeCursor();
-  ?>
-  <form action="php/suppr.php" method="GET">
-        <select name="ID_article" required="required"> 
-        <?php
-            foreach($article as $commentaire):
-        ?>
-            <option value="<?php echo $commentaire["ID_article"];?>"> <?php echo $commentaire["Titre"];?> </option>
-        <?php
-            endforeach;
-        ?>  
-        </select><br/><br/>
-        <input type="submit" value="Supprimer"/>
-    </form>
+  </form>  
 <?php else : ?>
   <div class="container mt-2">
       <div class="row justify-content-center">
