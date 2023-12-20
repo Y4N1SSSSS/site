@@ -127,14 +127,14 @@ try{
 <div class="mt-5 container">
 <div class="row d-flex justify-content-center">
   <div class="col-lg-6">
-    <h4>
+    <h5>
   Lorem ipsum dolor sit amet 
 consectetur. Est ac aliquam vitae 
 amet. Donec facilisi diam diam orci 
 aliquam in neque volutpat quis. 
 Gravida eleifend et id morbi. Tempus 
 ac fames a vitae enim.
-    </h4> 
+    </h5> 
   </div>
   <div class="col-lg-4 d-flex align-items-center justify-content-center">
   <a class="bouton NS">S'inscrire</a>
@@ -155,14 +155,14 @@ ac fames a vitae enim.
 <div class="mt-5 container">
 <div class="row d-flex justify-content-center align-items-center">
   <div class="col-lg-5">
-    <h4>
+    <h5>
   Lorem ipsum dolor sit amet 
 consectetur. Est ac aliquam vitae 
 amet. Donec facilisi diam diam orci 
 aliquam in neque volutpat quis. 
 Gravida eleifend et id morbi. Tempus 
 ac fames a vitae enim.
-    </h4> 
+    </h5> 
   </div>
   <div class="col-lg-5">
   <img class="w-100" src="images/illustrationequipe.png"></img>

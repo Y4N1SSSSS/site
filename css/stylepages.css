@@ -132,6 +132,16 @@ span{
     transition: 0.3s ease-in-out;
 }
 
+@keyframes progressBarAnimation {
+    from { width: 0%; }
+    to { width: var(--currentWidth); }
+}
+
+.progress-bar {
+    animation: progressBarAnimation 1s ease-out;
+}
+
+
 /* -------------------------------------------- */
 /* ---------------LES BOUTONS------------------ */
 /* -------------------------------------------- */
@@ -287,3 +297,19 @@ input[type="email"]{
     margin-bottom: 1%;
     padding: 1%;
 }
+
+
+
+.form-animation {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+}
+
+.form-animation.active {
+    opacity: 1;
+    max-height: 500px; /* ou la hauteur que vous préférez */
+}
+
+

@@ -114,39 +114,48 @@ var createdDiv = null;
 // Fonction pour créer ou supprimer la div avec le formulaire
 function toggleDonationForm() {
     if (isDonationFormVisible) {
-        // Supprimer la div précédemment créée
-        removeDonationForm();
+        // Supprimer la classe "active" pour cacher le formulaire
+        createdDiv.classList.remove("active");
+        setTimeout(removeDonationForm, 500); // Attendre la fin de l'animation (500ms)
     } else {
         // Créer un nouvel élément div
         createdDiv = document.createElement("div");
+
+        // Ajouter la classe "form-animation" pour l'animation
+        createdDiv.classList.add("form-animation");
 
         // Définir le contenu HTML de la nouvelle div (le formulaire)
         createdDiv.innerHTML = `
             <div id="donationFormDiv">
                 <div class="container">
-                <h2 class="titres">Faire un don matériel</h2>
-                <div class="ligne-container"> <div class="ligne-arrondie"></div> </div>
-                <!-- Formulaire pour le don matériel -->
-                <form id="formDonObjet" action="../php/donationobjet.php" method="post">
-                    <label for="type_objet">Type d'objet :</label>
-                    <select class="txtoption case" name="type_objet" required>
-                        <option class="txtoption" value="outil">Outil</option>
-                        <option class="txtoption" value="matierepremiere">Matière première</option>
-                        <option class="txtoption" value="meuble">Meuble</option>
-                    </select>
-                    <br>
-                    <br>
-                    <label for="description">Description de l'objet :</label>
-                    <textarea name="description" required></textarea>
-                    <br>
-                    <button class="bouton NS" type="submit">Faire don de le/les objet(s) </button>
-                </form>
+                    <h2 class="titres">Faire un don matériel</h2>
+                    <div class="ligne-container"> <div class="ligne-arrondie"></div> </div>
+                    <!-- Formulaire pour le don matériel -->
+                    <form id="formDonObjet" action="../php/donationobjet.php" method="post">
+                        <label for="type_objet">Type d'objet :</label>
+                        <select class="txtoption case" name="type_objet" required>
+                            <option class="txtoption" value="outil">Outil</option>
+                            <option class="txtoption" value="matierepremiere">Matière première</option>
+                            <option class="txtoption" value="meuble">Meuble</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="description">Description de l'objet :</label>
+                        <textarea name="description" required></textarea>
+                        <br>
+                        <button class="bouton NS mb-3" type="submit">Faire don de le/les objet(s) </button>
+                    </form>
                 </div>
             </div>
         `;
 
         // Ajouter la nouvelle div à la page, juste après le bouton
         document.getElementById("dynamicFormContainer").appendChild(createdDiv);
+
+        // Attendre un instant pour que l'élément soit ajouté au DOM, puis ajouter la classe "active"
+        setTimeout(function () {
+            createdDiv.classList.add("active");
+        }, 0);
     }
 
     // Inverser l'état
@@ -161,6 +170,7 @@ function removeDonationForm() {
         createdDiv = null;
     }
 }
+
 </script>
 
 
