@@ -46,10 +46,10 @@
                 if( $_SESSION['admin'] == 1){
                   echo(' </ul>
                   </div>
-                <a href="pages/Admin.php" class="ms-4 co"> Admin </a>
+                <a href="../pages/Admin.php" class="ms-4 co"> Admin </a>
                 <a class="ms-4 co">'
                 .$_SESSION["nom"].'</a>
-                <a class="ms-2 co" href="php/logout.php">
+                <a class="ms-2 co" href="../php/logout.php">
                   <img width="32px" height="32px" class="rotationlogo" src="../images/decov2.png" alt="deco">
                 </a>
               ');
@@ -59,7 +59,7 @@
             </div>
             <a class="ms-4 co">'
             .$_SESSION["nom"].'</a>
-            <a class="ms-2 co" href="php/logout.php">
+            <a class="ms-2 co" href="../php/logout.php">
               <img width="32px" height="32px" class="rotationlogo" src="../images/decov2.png" alt="deco">
             </a>
           ');
@@ -68,10 +68,10 @@
         else{
           echo(' 
           <li class="nav-item">
-            <a class="nav-link" href="php/Connexion.php">Connexion</a>
+            <a class="nav-link" href="../php/Connexion.php">Connexion</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="php/InscriptionForm.php">Inscription</a>
+            <a class="nav-link" href="../php/InscriptionForm.php">Inscription</a>
           </li>
         </ul>
       </div>
