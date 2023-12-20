@@ -46,23 +46,19 @@ try{
         <li class="nav-item">
           <a class="nav-link" href="pages/planning.php">Planning</a>
         </li>   
-        <?php if(isset($_SESSION["nom"])){
-          $requete='SELECT * FROM utilisateur WHERE IS_Admin = 1';
-          $resultats=$pdo->query($requete);
-          $article=$resultats->fetchAll(PDO::FETCH_ASSOC);
-          foreach ($article as $accadmin):
-            if( $_SESSION['admin'] == 1){
-              echo(' </ul>
-            </div>
-            <a href="pages/Admin.php" class="ms-4 co"> Admin </a>
-            <a class="ms-4 co">'
-            .$_SESSION["nom"].'</a>
-            <a class="ms-2 co" href="php/logout.php">
-              <img width="32px" height="32px" class="rotationlogo" src="images/decov2.png" alt="deco">
-            </a>
-          ');
-            }
-           
+        <?php 
+        if(isset($_SESSION["nom"])){
+                if( $_SESSION['admin'] == 1){
+                  echo(' </ul>
+                  </div>
+                <a href="pages/Admin.php" class="ms-4 co"> Admin </a>
+                <a class="ms-4 co">'
+                .$_SESSION["nom"].'</a>
+                <a class="ms-2 co" href="php/logout.php">
+                  <img width="32px" height="32px" class="rotationlogo" src="images/decov2.png" alt="deco">
+                </a>
+              ');
+                }
           else{
             echo(' </ul>
             </div>
@@ -73,9 +69,6 @@ try{
             </a>
           ');
             }
-          endforeach;
-            $resultats->closeCursor();
-          
         }
         else{
           echo(' 
