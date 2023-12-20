@@ -120,6 +120,7 @@ color: #fff;
 background-color: #1f1c1a;
 cursor: pointer;
 margin-right: 2%;
+border: 0px;
 }
 
 .bouton:hover {
@@ -238,3 +239,12 @@ font-style: italic;
 .selectadmin {
     width: 100%;
 }
+
+.NS
+{
+ -moz-user-select: none;
+ -webkit-user-select: none;
+ -ms-user-select: none; 
+ user-select: none; 
+}
+

@@ -16,7 +16,7 @@
             <!-- Colonne Contacts -->
             <div class="col-md-4">
                 <h4 class="titresFooter">Contact</h4>
-                <p class="textFooter">Adresse: 28 Rue des Cerisiers, 43100 Blazac, France</p>
+                <p class="textFooter">Adresse: 28 Rue des Cerisiers, 43100 Blassac, France</p>
                 <p class="textFooter">Email: restauretonpatrimoine@association.org</p>
                 <p class="textFooter">Téléphone: +33 04 78 56 89 45</p>
             </div>
