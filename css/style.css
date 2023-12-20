@@ -170,9 +170,9 @@ transform: rotate(180deg);
 }
 
 .logo{
-    margin-top: 4%;
-    margin-left: 35%;
-    width:10vw;
+    margin-top: 8%;
+    margin-left: 10%;
+    width:20vw;
     height:auto;
 }
 
@@ -219,7 +219,7 @@ font-style: italic;
 }
 
 .taillelogo{
-    width: 5%;
+    width: 14vw;
 }
 
 .card {
