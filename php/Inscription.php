@@ -15,6 +15,7 @@ try{
 if ( isset($_GET['done'])){
 $nom = $_GET['nom'];
 $mdp = $_GET['mdp'];
+$ashmdp=SHA1($mdp);
 
 $requete='SELECT * FROM utilisateur WHERE IS_Admin = 1';
 $resultats=$pdo->query($requete);
@@ -40,7 +41,7 @@ $resultats->closeCursor();
         }
         else {
             $inscrire = $pdo->prepare("insert into utilisateur(Nom_user,Mdp_user) values(?,?)");
-            if ($inscrire->execute(array($nom, $mdp))) { 
+            if ($inscrire->execute(array($nom, $ashmdp))) { 
                 $_SESSION['mdp'] = $mdp;
                 $_SESSION['nom'] = $nom;
                 header('Location: ../index.php');
