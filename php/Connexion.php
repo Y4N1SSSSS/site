@@ -64,13 +64,16 @@ require "headerconnexion.php";
 <article>
   <!-- SECTION DES DONS EN EUROS -->
   <h1 class="titres">CONNEXION</h1>
+  <div class="ligne-container"> <div class="ligne-arrondie"></div> </div>
+  <div class="container mt-3">
   <?php
   if($loginfaux){
-    echo "Vous avez sélectionné le mauvais login ou mot de passe. Veuillez réessayer ";
+    echo "<style> .erreur{ color: #d9071c; } </style>";
+    echo "<span class='erreur'> *Vous avez sélectionné le mauvais login ou mot de passe. Veuillez réessayer </span>";
   }
   ?>
-    <div class="ligne-container"> <div class="ligne-arrondie"></div> </div>
-    <div class="container mt-3">
+    
+    
 <form method="get" action="" class="row">
         <div class="col-md-12">
           <div class="form-group">
