@@ -128,12 +128,12 @@ try{
 <div class="row d-flex justify-content-center">
   <div class="col-lg-6">
     <h5>
-  Lorem ipsum dolor sit amet 
-consectetur. Est ac aliquam vitae 
-amet. Donec facilisi diam diam orci 
-aliquam in neque volutpat quis. 
-Gravida eleifend et id morbi. Tempus 
-ac fames a vitae enim.
+    Cet événement a pour but de rénover le patrimoine
+  de Blassac pendant une durée d'une semaine.
+  En coopération avec plusieurs volontaires participés à 
+  la préservation de notre patrimoine sans même s'engager à venir chaque jour.
+  Vous avez le droit de venir uniquement les jours qui vous intéresse.
+
     </h5> 
   </div>
   <div class="col-lg-4 d-flex align-items-center justify-content-center">
@@ -147,7 +147,7 @@ ac fames a vitae enim.
 <section>
 
 <div class="mt-5">
-<h2 class="titres">Qui somme-nous ?</h1>
+<h2 class="titres">Qui sommes-nous ?</h1>
 <div class="d-flex justify-content-center">
 <div class="ligne-arrondie"></div>
 </div>
@@ -156,12 +156,12 @@ ac fames a vitae enim.
 <div class="row d-flex justify-content-center align-items-center">
   <div class="col-lg-5">
     <h5>
-  Lorem ipsum dolor sit amet 
-consectetur. Est ac aliquam vitae 
-amet. Donec facilisi diam diam orci 
-aliquam in neque volutpat quis. 
-Gravida eleifend et id morbi. Tempus 
-ac fames a vitae enim.
+    Les Amis De Blassac est une association culturelle et historique
+    proposant une grande variété d'activités 
+    pour tous les membres. Nous organison des événements 
+    tels que des concerts, des expositions d'art et des conférences.
+    Mais nous offrons également des activités de loisirs telles que des randonnées 
+    pédestres, des sorties en plein air et des ateliers de création.
     </h5> 
   </div>
   <div class="col-lg-5">
@@ -184,39 +184,31 @@ ac fames a vitae enim.
 <div class="row d-flex justify-content-center align-items-center">
 <div class="col-lg-10">
 <h6 class="textes-min">
-  Lorem ipsum dolor sit amet 
-consectetur. Est ac aliquam vitae 
-amet. Donec facilisi diam diam orci 
-aliquam in neque volutpat quis. 
-Gravida eleifend et id morbi. Tempus 
-ac fames a vitae enim.Lorem ipsum dolor sit amet 
-consectetur. Est ac aliquam vitae 
-amet. Donec facilisi diam diam orci 
-aliquam in neque volutpat quis. 
-Gravida eleifend et id morbi. Tempus 
-ac fames a vitae enim.
+Grâce à vos dons nous avons par le passé pu organiser divers 
+évènements pour toute la commune, de simple atelier création
+à concert, vos dons permettent à notre association d'organiser
+divers évènements pour le plaisir de tous.
+<br>
+Grâce à vos dons nous pourront réaliser plus d'évènements similaire à l'avenir.
     </h6> 
 </div>
   <div class="col-lg-5">
     <h4 class="titres-min">UTILISATION DES DONS MONÉTAIRES<h4>
     <h6 class="textes-min">
-  Lorem ipsum dolor sit amet 
-consectetur. Est ac aliquam vitae 
-amet. Donec facilisi diam diam orci 
-aliquam in neque volutpat quis. 
-Gravida eleifend et id morbi. Tempus 
-ac fames a vitae enim.
+  Avec les dons monétaire récolté au fil des années notre association
+  à organisé divers évènement adaptré aux petits comme aux grands,
+  des simples randonnés pédestres aux ateliers de création en passant par des expositions d'art et des conférences 
+  sans oublier l'aide énorme que ces dons ont apporté à la rénovation des notre patrimoine.
     </h6> 
       </div>
       <div class="col-lg-5">
       <h4 class="titres-min">UTILISATION DES DONS D'OBJETS<h4>
     <h6 class="textes-min">
-  Lorem ipsum dolor sit amet 
-consectetur. Est ac aliquam vitae 
-amet. Donec facilisi diam diam orci 
-aliquam in neque volutpat quis. 
-Gravida eleifend et id morbi. Tempus 
-ac fames a vitae enim.
+  Grâce aux dons d'objets nous pouvons organisé des évènements en économisant,
+  ce qui permet d'investir cet argent économisant dans de futur projets.
+  Le matériel récupéré a été utilisé pour la réstauration du patrimoine, pour les 
+  randonnés ainsi que les ateliers de créations.
+  Les objets qui ne vous servent plus permettent de servir à d'autre.
     </h6> 
       </div>
       <div class="row argent">
