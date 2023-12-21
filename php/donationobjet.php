@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='../css/bootstrap.min.css' rel='stylesheet'>
+    <link href='../css/stylepages.css' rel='stylesheet'>
+    <title>Remerciement</title>
+</head>
+<body>
+
 <?php
 session_start();
 
@@ -42,7 +53,13 @@ if (isset($_SESSION["nom"]) && isset($_POST["type_objet"]) && isset($_POST["desc
             $pdo->commit();
 
             // Envoyer une réponse au client (facultatif)
-            echo "Don d'objet effectué avec succès !";
+            echo "<div class='center-content'>";
+            echo "<h1 class='titresR'>Merci pour votre don!</h1>";
+            echo "<div class='ligne-container'><div class='ligne-arrondieXXL'></div></div>";
+            echo "<div class='ligne-container'><h6 class='ligne-container'>Vous avez donné un/une :&nbsp;$typeObjet</h6></div>";
+            echo "<div class='ligne-container'><h6 class='ligne-container'><i>$description<i></h6></div><br>";
+            echo "</div>";            
+            echo "<div class='ligne-container'><a class='boutonresult NS' href='../index.php'>Accueil</a></div>";
         } catch (Exception $e) {
             // En cas d'erreur, annuler la transaction
             $pdo->rollBack();
@@ -55,3 +72,6 @@ if (isset($_SESSION["nom"]) && isset($_POST["type_objet"]) && isset($_POST["desc
     echo "Erreur lors du don d'objet. Vérifiez les paramètres du formulaire.";
 }
 ?>
+
+</body>
+</html>
