@@ -178,18 +178,6 @@ transform: rotate(180deg);
 
 /* ------- */
 
-.card-text{
-text-align: center!important;
-}
-
-.policecarte {
-font-family: PoppinsMedium;
-}
-
-.policecartesimple{
-font-family: Poppins;
-}
-
 input{
 background-color: #f9f7e4;
 }
@@ -220,16 +208,6 @@ font-style: italic;
 
 .taillelogo{
     width: 14vw;
-}
-
-.card {
-    border: 1px solid #ddd; 
-    border-radius: 10px; 
-}
-
-.card-title {
-    color: #333; 
-    font-size: 1.25rem; 
 }
 
 .typobold {
@@ -302,4 +280,75 @@ font-style: italic;
     margin-top: 8%;
     width: 3vw;
     height: auto;
+}
+
+.policecarte {
+font-family: PoppinsMedium;
+}
+
+.policecartesimple{
+font-family: Poppins;
+}
+
+.imgfonddonation {
+    background-image: url(../images/donation.png);
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+}
+
+.fondnoir {
+background-color: #000000;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #1f1c1a; /* Ajout de la couleur de fond noire à la classe .card */
+}
+
+.card-title {
+color: #333; 
+font-size: 1.25rem; 
+}
+
+.card-body {
+    padding: 1rem; /* Ajout d'un peu de marge à l'intérieur de la carte */
+}
+
+.card-title {
+    color: #ffffff; /* Changer la couleur du texte en blanc pour contraster avec le fond noir */
+    font-size: 1.25rem;
+    text-transform: capitalize;
+}
+
+.text-muted{
+    color: #ffffff !important;
+}
+
+.card-body > .card-text{
+    color: #ffffff;
+}
+
+.espacementtop{
+    margin-top :5%;
+}
+
+.margindresponsive {
+margin-right: 2%;
+}
+
+.margingresponsive {
+    margin-left: 2%;
+}
+
+@media screen and (max-width: 991px) {
+    .margindresponsive {
+        margin-right: 0%;
+    }
+
+    .margingresponsive {
+        margin-left: 0%;
+    }
 }

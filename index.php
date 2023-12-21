@@ -114,32 +114,28 @@ try{
 <section id="contenu">
 
 <div>
-<h2 class="titres">En quoi consiste l'événement ?</h2>
-<div class="d-flex justify-content-center">
-<div class="ligne-arrondie"></div>
-</div>
+  <h2 class="titres mt-5">En quoi consiste l'événement ?</h2>
+  <div class="d-flex justify-content-center">
+    <div class="ligne-arrondie"></div>
+  </div>
 </div>
 
-<div class="mt-5 d-flex justify-content-center">
-<img class="w-50" src="images/illustrationprojet.png"></img>
+<div class="mt-5 container d-flex justify-content-center">
+  <img class="w-100" src="images/illustrationprojet.png" alt="Illustration Projet">
 </div>
 
 <div class="mt-5 container">
-<div class="row d-flex justify-content-center">
-  <div class="col-lg-6">
-    <h5>
-    Cet événement a pour but de rénover le patrimoine
-  de Blassac pendant une durée d'une semaine.
-  En coopération avec plusieurs volontaires participés à 
-  la préservation de notre patrimoine sans même s'engager à venir chaque jour.
-  Vous avez le droit de venir uniquement les jours qui vous intéresse.
-
-    </h5> 
+  <div class="row d-flex justify-content-center">
+    <div class="col-lg-9">
+      <h5 class="typobold">Cet événement a pour but de rénover le patrimoine de Blassac pendant une durée d'une semaine.</h5>
+      <h5 class="mt-3 policecartesimple">
+        En coopération avec plusieurs volontaires participants à la préservation de notre patrimoine sans même s'engager à venir chaque jour. Vous avez le droit de venir uniquement les jours qui vous intéressent.
+      </h5>
+    </div>
+    <div class="col-lg-3 d-flex align-items-center justify-content-center">
+      <a class="bouton NS mt-3">S'inscrire</a>
+    </div>
   </div>
-  <div class="col-lg-4 d-flex align-items-center justify-content-center">
-  <a class="bouton NS">S'inscrire</a>
-  </div>
-</div>  
 </div>
 
 </section>
@@ -147,69 +143,62 @@ try{
 <section>
 
 <div class="mt-5">
-<h2 class="titres">Qui sommes-nous ?</h1>
-<div class="d-flex justify-content-center">
-<div class="ligne-arrondie"></div>
-</div>
+  <h2 class="titres">Qui sommes-nous ?</h2>
+  <div class="d-flex justify-content-center">
+    <div class="ligne-arrondie"></div>
+  </div>
 </div>
 <div class="mt-5 container">
-<div class="row d-flex justify-content-center align-items-center">
-  <div class="col-lg-5">
-    <h5>
-    Les Amis De Blassac est une association culturelle et historique
-    proposant une grande variété d'activités 
-    pour tous les membres. Nous organison des événements 
-    tels que des concerts, des expositions d'art et des conférences.
-    Mais nous offrons également des activités de loisirs telles que des randonnées 
-    pédestres, des sorties en plein air et des ateliers de création.
-    </h5> 
+  <div class="row d-flex justify-content-center align-items-center">
+    <div class="col-lg-6">
+      <h5 class="typobold margindresponsive">
+        Les Amis De Blassac est une association culturelle et historique proposant une grande variété d'activités pour tous les membres.
+      </h5>
+      <h5 class="mt-4 policecartesimple margindresponsive">Nous organisons des événements tels que des concerts, des expositions d'art et des conférences. Mais nous offrons également des activités de loisirs telles que des randonnées pédestres, des sorties en plein air et des ateliers de création.
+      </h5>
+      <div class="mb-4"></div>
+    </div>
+    <div class="col-lg-6">
+      <img class="w-100" src="images/illustrationequipe.png" alt="Illustration Équipe">
+    </div>
   </div>
-  <div class="col-lg-5">
-  <img class="w-100" src="images/illustrationequipe.png"></img>
-  </div>
-</div>  
 </div>
 
 </section>
 
 <section>
 
-<div class="mt-5">
-<h2 class="titres">Pourquoi faire un don ?</h1>
-<div class="d-flex justify-content-center">
-<div class="ligne-arrondie"></div>
+<div class="mt-3">
+  <h2 class="titres">Pourquoi faire un don ?</h2>
+  <div class="d-flex justify-content-center">
+    <div class="ligne-arrondie"></div>
+  </div>
 </div>
+<div class="container imgfonddonation">
+  <div class="row d-flex justify-content-center align-items-center">
+    <div class="col-lg-12 mt-5">
+      <h5 class="text-center typobold">
+        Grâce à vos dons, nous avons par le passé pu organiser divers événements pour toute la commune.
+      </h5>
+      <h6 class="text-center policecartesimple"> De simple atelier création à concert, vos dons permettent à notre association d'organiser divers événements pour le plaisir de tous.
+        <br> Grâce à vos dons, nous pourrons réaliser plus d'événements similaires à l'avenir.
+      </h6>
+    </div>
+    <div class="col-lg-6 mt-5">
+      <h4 class="text-center typobold texteitalic">UTILISATION DES DONS MONÉTAIRES</h4>
+      <h6 class="text-center policecartesimple margindresponsive ">
+      Avec les dons monétaires récoltés au fil des années, notre association a organisé divers événements adaptés aux petits comme aux grands, de simple randonnée pédestre aux ateliers de création en passant par des expositions d'art et des conférences. Sans oublier l'aide énorme que ces dons ont apportée à la rénovation de notre patrimoine.
+      </h6>
+    </div>
+    <div class="col-lg-6 mt-5">
+      <h4 class="text-center typobold texteitalic">UTILISATION DES DONS D'OBJETS</h4>
+      <h6 class="text-center policecartesimple margingresponsive">
+        Grâce aux dons d'objets, nous pouvons organiser des événements en économisant, ce qui permet d'investir cet argent économisé dans de futurs projets. <br> Le matériel récupéré a été utilisé pour la restauration du patrimoine, pour les randonnées ainsi que les ateliers de créations. Les objets qui ne vous servent plus permettent de servir à d'autres.
+      </h6>
+    </div>
+  </div>
 </div>
-<div class="mt-5 container">
-<div class="row d-flex justify-content-center align-items-center">
-<div class="col-lg-10">
-<h6 class="textes-min">
-Grâce à vos dons nous avons par le passé pu organiser divers 
-évènements pour toute la commune, de simple atelier création
-à concert, vos dons permettent à notre association d'organiser
-divers évènements pour le plaisir de tous.
-<br>
-Grâce à vos dons nous pourront réaliser plus d'évènements similaire à l'avenir.
-    </h6> 
-</div>
-  <div class="col-lg-5">
-    <h4 class="titres-min">UTILISATION DES DONS MONÉTAIRES<h4>
-    <h6 class="textes-min">
-  Avec les dons monétaire récolté au fil des années notre association
-  à organisé divers évènement adaptré aux petits comme aux grands,
-  des simples randonnés pédestres aux ateliers de création en passant par des expositions d'art et des conférences 
-  sans oublier l'aide énorme que ces dons ont apporté à la rénovation des notre patrimoine.
-    </h6> 
-      </div>
-      <div class="col-lg-5">
-      <h4 class="titres-min">UTILISATION DES DONS D'OBJETS<h4>
-    <h6 class="textes-min">
-  Grâce aux dons d'objets nous pouvons organisé des évènements en économisant,
-  ce qui permet d'investir cet argent économisant dans de futur projets.
-  Le matériel récupéré a été utilisé pour la réstauration du patrimoine, pour les 
-  randonnés ainsi que les ateliers de créations.
-  Les objets qui ne vous servent plus permettent de servir à d'autre.
-    </h6> 
+
       </div>
       <div class="row argent">
       <div class="col-sm">
@@ -266,17 +255,17 @@ Grâce à vos dons nous pourront réaliser plus d'évènements similaire à l'av
 </script>
 </section>
 
-<div class="mt-5">
+<div class="espacementtop">
 <h2 class="titres">Donnez-nous votre avis sur l'événement</h1>
 <div class="d-flex justify-content-center">
 <div class="ligne-arrondie"></div>
 </div>
 </div>
 
-<article class="Blog mt-5">
+<article class="Blog">
 <?php if (isset($_SESSION["nom"])) : ?>
   <form action="php/ajout.php" method="GET">
-      <div class="container mt-5">
+      <div class="container mt-2">
           <div class="row justify-content-center">
               <div class="col-md-8">
                   <div class="form-group">
@@ -301,7 +290,7 @@ Grâce à vos dons nous pourront réaliser plus d'évènements similaire à l'av
       </div>
   </form>  
 <?php else : ?>
-  <div class="container mt-2">
+  <div class="container mt-5">
       <div class="row justify-content-center">
           <div class="col-md-8">
               <h4 class="text-center texteitalic">Vous avez besoin d'être connecté si vous voulez poster un commentaire</h2>
@@ -327,8 +316,8 @@ Grâce à vos dons nous pourront réaliser plus d'évènements similaire à l'av
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title policecarte"><?php echo $commentaire["Titre"]; ?></h5>
-                        <p class="card-text policecartesimple"><?php echo $commentaire["Contenue"]; ?></p>
-                        <p class="card-text policecartesimple"><small class="text-muted">Rédigé le <?php echo $commentaire["Date_article"]; ?></small></p>
+                        <p class="card-text policecartesimple pt-2"><?php echo $commentaire["Contenue"]; ?></p>
+                        <p class="card-text policecartesimple text-center"><small class="text-muted">Rédigé le <?php echo $commentaire["Date_article"]; ?></small></p>
                     </div>
                 </div>
             </div>

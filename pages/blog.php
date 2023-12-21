@@ -42,7 +42,7 @@ include '../php/header.php';
                 <div class="card-body">
                     <h5 class="card-title policecarte"><?php echo $commentaire["Titre"]; ?></h5>
                     <p class="card-text policecartesimple"><?php echo $commentaire["Contenue"]; ?></p>
-                    <p class="card-text policecartesimple"><small class="text-muted">Rédigé le <?php echo $commentaire["Date_article"]; ?></small></p>
+                    <p class="card-text policecartesimple text-center"><small class="text-muted">Rédigé le <?php echo $commentaire["Date_article"]; ?></small></p>
                 </div>
             </div>
         </div>
