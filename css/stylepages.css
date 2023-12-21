@@ -132,16 +132,6 @@ span{
     transition: 0.3s ease-in-out;
 }
 
-@keyframes progressBarAnimation {
-    from { width: 0%; }
-    to { width: var(--currentWidth); }
-}
-
-.progress-bar {
-    animation: progressBarAnimation 1s ease-out;
-}
-
-
 /* -------------------------------------------- */
 /* ---------------LES BOUTONS------------------ */
 /* -------------------------------------------- */
