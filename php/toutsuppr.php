@@ -15,7 +15,7 @@ try{
     $suppr=$pdo->exec($requete);
 
     // redirection
-    header('Location: ../index.php');
+    header('Location: ../pages/admin.php');
     exit();
 
 ?>
