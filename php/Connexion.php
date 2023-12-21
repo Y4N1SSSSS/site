@@ -2,49 +2,55 @@
 session_start();
 require_once 'Config.php';
 
-if ( isset($_GET['done'])){
-    $mdp = $_GET['mdp'];
-    $nom = $_GET['nom'];
+if (isset($_GET['done'])) {
+  $nom = $_GET['nom'];
+  $mdp = $_GET['mdp'];
 
-    try {
-        $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $user , $password);
-        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-      } 
-      catch (PDOException $e) {
-        die("La connexion a échoué: " . $e->getMessage());
-      }
+  try {
+      $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $user, $password);
+      $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  } catch (PDOException $e) {
+      die("La connexion a échoué: " . $e->getMessage());
+  }
 
-    $sql = "SELECT * FROM utilisateur WHERE Nom_user=? AND Mdp_user=?";
-    $stmt = $pdo->prepare($sql);
-    $stmt->execute([$nom, $mdp]);
+  $sql = "SELECT * FROM utilisateur WHERE Nom_user=?";
+  $stmt = $pdo->prepare($sql);
+  $stmt->execute([$nom]);
 
-    if ($stmt->rowCount() == 1) {
-        $_SESSION['nom'] = $nom;
-        $_SESSION['mdp'] = $mdp;
-        $requete = 'SELECT * FROM utilisateur WHERE Nom_user = :nom';
+  if ($stmt->rowCount() == 1) {
+      $utilisateur = $stmt->fetch(PDO::FETCH_ASSOC);
+
+      // Utiliser password_verify pour vérifier le mot de passe
+      if (password_verify($mdp, $utilisateur['Mdp_user'])) {
+          $_SESSION['nom'] = $nom;
+          $_SESSION['mdp'] = $mdp;
+
+          $requete = 'SELECT * FROM utilisateur WHERE Nom_user = :nom';
         $statement = $pdo->prepare($requete);
         $statement->bindParam(':nom', $nom, PDO::PARAM_STR);
         $statement->execute();
 
         $utilisateur = $statement->fetchAll(PDO::FETCH_ASSOC);  
 
-  foreach ($utilisateur as $accadmin):
-  if( $accadmin["IS_Admin"] == 1){
-    $_SESSION['admin'] = 1;
-  }
-  else{
-   $_SESSION['admin'] = 0;
-  }
-endforeach;
-$statement->closeCursor();
-header('Location: ../index.php');
-        exit();
-      }
-      else{
-        $loginfaux=true;
-      }
-      $admin->closeCursor();
+        foreach ($utilisateur as $accadmin):
+          if( $accadmin["IS_Admin"] == 1){
+            $_SESSION['admin'] = 1;
+          }
+          else{
+           $_SESSION['admin'] = 0;
+          }
+        endforeach;
+        $statement->closeCursor();
 
+          header('Location: ../index.php');
+          exit();
+      } 
+      else {
+        $loginfaux = true;
+      }
+  } else {
+      $loginfaux = true;
+  }
 }
 
 require "headerconnexion.php";
