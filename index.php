@@ -16,12 +16,12 @@ try{
 <link rel="icon" href="images/favicon_taille.ico" type="image/x-icon">
 <script src="js/jquery-3.6.4.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/arrow.js"></script>
 <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 <link rel="stylesheet" href="css/owl.carousel.min.css">
 <link rel="stylesheet" href="css/owl.theme.default.min.css">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/style.css">
-<script src="js/arrow.js"></script>
 <title>Accueil</title>
 </head>
 <body>
@@ -86,8 +86,13 @@ try{
         ?>
   </div>
 </nav>
-<div class="background">
+
 <section id="carrousel">
+
+<!-- Flèche de retour en haut -->
+<div href="#top" id="back-to-top">
+  <img src="images/flèche.png" alt="Flèche de retour">
+</div>
 
 <div class="owl-carousel owl-theme">
 <div class="item imgcarrousel1">
@@ -111,10 +116,7 @@ try{
 <script src="js/carrousel.js"></script>
 
 </section>
-    <!-- Flèche de retour en haut -->
-<div href="#top" id="back-to-top">
-  <img src="images/flèche.png" alt="Flèche de retour">
-</div>
+
 <section id="contenu">
 
 <div>
@@ -335,7 +337,7 @@ try{
 </article>
 </section>
 <body>
-</div>
+
 <footer class="footer text-light">
     <div class="container py-4">
         <div class="row">

@@ -396,26 +396,18 @@ margin-right: 2%;
         position: absolute;
         left: 50%;
         transform: translate(-50%, -50%);
-    }
-    .couleurnav{
-        background-color: #f9f7e4;
-        height: 100px;
-        }
-    
+        padding:5%
+    } 
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 525px) {
     .taillelogo {
-        width: 125px;
+        width: 155px;
         display: block !important;
         margin: auto !important;
         position: absolute;
         left: 50%;
         transform: translate(-50%, -50%);
-    }
-    .couleurnav{
-        background-color: #f9f7e4;
-        height: 75px;
-        }
-    
+        padding:5%
+    }  
 }
