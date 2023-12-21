@@ -21,6 +21,12 @@ body{
     text-transform: uppercase;
 }
 
+@media only screen and (max-width: 767px) {
+    .titres {
+      font-size: 4vw !important;
+    }
+}
+
 .titresR{
     text-align: center;
     margin-bottom: -0.08%;
@@ -32,6 +38,12 @@ body{
 .titredon{
     font-size: 1.5vw;
     font-weight: bold;
+}
+
+@media only screen and (max-width: 767px) {
+    .titredon {
+      font-size: 2vw !important;
+    }
 }
 
 /* TEXTES */
@@ -46,13 +58,25 @@ span{
     text-align: center;
 }
 
-.spanD{
-    font-size: 1.2vw;
-    margin-right: 5%;
+.spanD {
+    font-size: 1.2vw; 
 }
 
-.spanobj{
+@media (max-width: 767px) {
+    .spanD {
+        font-size: 1.8vw !important; 
+    }
+}
+
+.spanobj {
+    font-size: 1.2vw;
     margin-left: 5%;
+}
+
+@media (max-width: 767px) {
+    .spanobj {
+        font-size: 1.8vw !important; 
+    }
 }
 
 .spanobj a{
@@ -84,6 +108,12 @@ span{
     font-size: 0.85vw;
     letter-spacing: 0.25vw;
     font-weight: bold;
+}
+
+@media only screen and (max-width: 767px) {
+    .progress-text {
+      font-size: 1.5vw !important;
+    }
 }
 
 /* -------------------------------------------- */
@@ -121,6 +151,7 @@ span{
     background-color: #ddd;
     overflow: hidden;
     margin-right: 8%;
+    margin-top: 2%;
 }
 
 .progress-bar {
@@ -147,6 +178,13 @@ span{
     background-color: #1a1f1b;
     cursor: pointer;
     margin-right: 2%;
+}
+
+@media only screen and (max-width: 767px) {
+    .bouton {
+      font-size: 1.5vw !important;
+      padding: 2% !important;
+    }
 }
 
 .bouton:hover {
@@ -215,6 +253,8 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 3%;
+    margin-bottom: 1%;
 }
 
 .flexEUR{
@@ -228,6 +268,13 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+
+.d-flex{
+    margin-top: 3%;
+    margin-bottom: 2%;
 }
 
 .back{
@@ -237,7 +284,11 @@ span{
     background-size: 100%;
 }
 
-
+@media only screen and (max-width: 767px) {
+    .back {
+        background-image: url(../images/iconsbackgroundmin.png);
+    }
+}
 
 /* -------------------------------------------- */
 /* ------------------OUTILS-------------------- */

@@ -14,7 +14,7 @@
     <div class="container py-4">
         <div class="row">
             <!-- Colonne Contacts -->
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6 text-center mb-3">
                 <h4 class="titresFooter">Contact</h4>
                 <p class="textFooter">Adresse: 28 Rue des Cerisiers, 43100 Blassac, France</p>
                 <p class="textFooter">Email: restauretonpatrimoine@association.org</p>
@@ -22,15 +22,17 @@
             </div>
 
             <!-- Colonne Réseaux sociaux -->
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6 text-center mb-3">
                 <h4 class="titresFooter">Réseaux sociaux</h4>
-                    <a href="https://twitter.com/" target="_blank"><img src="../images/X.png" class='imagesfooter'></a>
-                    <a href="https://www.facebook.com/" target="_blank"><img src="../images/F.png" class='imagesfooter'></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img src="../images/I.png" class='imagesfooter'></a>
+                    <div class="d-flex justify-content-center align-items-center">
+                    <a href="https://twitter.com/" target="_blank" class="mr-2"><img src="../images/X.png" class='imagesfooter mx-2'></a>
+                    <a href="https://www.facebook.com/" target="_blank" class="mr-2"><img src="../images/F.png" class='imagesfooter mx-2'></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="../images/I.png" class='imagesfooter mx-2'></a>
+                </div>
             </div>
             
             <!-- Colonne Logo -->
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6 text-center mb-3">
                 <img src="../images/logo.png" alt="Logo de l'association" class="logo">
             </div>
         </div>

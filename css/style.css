@@ -159,10 +159,17 @@ transform: rotate(180deg);
 }
 
 .imagesfooter {
-    width: 3.25vw;
+    width: 3.25em; 
     margin-right: 8%;
     height: auto;
     transition: transform 0.3s;
+}
+
+@media only screen and (max-width: 767px) {
+    .imagesfooter {
+        width: 4em !important; 
+        margin-right: 4% !important; 
+    }
 }
 
 .imagesfooter:hover {
@@ -174,6 +181,19 @@ transform: rotate(180deg);
     margin-left: 10%;
     width:20vw;
     height:auto;
+    text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .logo {
+        margin-top: 8%;
+        width: 45vw;
+        height: auto;
+        text-align: center;
+        display: block; /* Pour que les marges automatiques fonctionnent correctement */
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 /* ------- */
