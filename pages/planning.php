@@ -17,12 +17,11 @@
     <div class="ligne-container"> <div class="ligne-arrondie"></div> </div>
     <!-- Section en flexbox pour l'image et le texte -->
     <div class="container flexd mt-5 mb-3">
-        <img class="imagedon" src="../images/A COMPLETER"> 
+        <img  src="../images/planning_01.png"class="imageplanning"> 
         - Rencontre entre les organisateurs et les volontaires <br>
         - Création du plan d’action, quel ordre de restauration des patrimoines <br>
         - Listings du matériel nécessaire pour les jours de restauration <br>
         - Randonnée pédestre courte <br>
-        - Pique-nique conviviale (apporter à manger) <br>
     </span>
     </div>
 
@@ -31,13 +30,11 @@
     <div class="ligne-container"> <div class="ligne-arrondie"></div> </div>
     <!-- Section en flexbox pour l'image et le texte -->
     <div class="container flexd mt-5 mb-3">
-        - Rencontre entre les organisateurs et les volontaires <br>
-        - Création du plan d’action, quel ordre de restauration des patrimoines <br>
-        - Listings du matériel nécessaire pour les jours de restauration <br>
-        - Randonnée pédestre courte <br>
-        - Pique-nique conviviale (apporter à manger) <br>
+        - Visite des patrimoines <br>
+        - Apprentissage de l’histoire de chaque lieu <br>
+        - Repérage des dégâts et des restaurations à réaliser pour chaque patrimoine <br>
     </span>
-    <img class="imagedon" src="../images/A COMPLETER"> 
+    <img class="imageplanning" src="../images/planning_02.png"> 
     </div>
 
     <!-- SECTION DES DONS EN EUROS -->
@@ -45,12 +42,10 @@
     <div class="ligne-container"> <div class="ligne-arrondie"></div> </div>
     <!-- Section en flexbox pour l'image et le texte -->
     <div class="container flexd mt-5 mb-3">
-        <img class="imagedon" src="../images/A COMPLETER"> 
-        - Rencontre entre les organisateurs et les volontaires <br>
-        - Création du plan d’action, quel ordre de restauration des patrimoines <br>
-        - Listings du matériel nécessaire pour les jours de restauration <br>
-        - Randonnée pédestre courte <br>
-        - Pique-nique conviviale (apporter à manger) <br>
+        <img class="imageplanning" src="../images/planning_03.png"> 
+        - Restauration du premier lieu choisis <br>
+        - Repos avec des jus de fruits et gâteaux <br>
+        - Finalisation de la restauration <br>
     </span>
     </div>
 
@@ -59,13 +54,11 @@
     <div class="ligne-container"> <div class="ligne-arrondie"></div> </div>
     <!-- Section en flexbox pour l'image et le texte -->
     <div class="container flexd mt-5 mb-3">
-        - Rencontre entre les organisateurs et les volontaires <br>
-        - Création du plan d’action, quel ordre de restauration des patrimoines <br>
-        - Listings du matériel nécessaire pour les jours de restauration <br>
-        - Randonnée pédestre courte <br>
-        - Pique-nique conviviale (apporter à manger) <br>
+    - Restauration du second lieu choisis <br>
+        - Repos avec des jus de fruits et gâteaux <br>
+        - Finalisation de la restauration <br>
     </span>
-    <img class="imagedon" src="../images/A COMPLETER"> 
+    <img class="imageplanning" src="../images/planning_04.png"> 
     </div>
 
         <!-- SECTION DES DONS EN EUROS -->
@@ -73,12 +66,10 @@
     <div class="ligne-container"> <div class="ligne-arrondie"></div> </div>
     <!-- Section en flexbox pour l'image et le texte -->
     <div class="container flexd mt-5 mb-3">
-        <img class="imagedon" src="../images/A COMPLETER"> 
-        - Rencontre entre les organisateurs et les volontaires <br>
-        - Création du plan d’action, quel ordre de restauration des patrimoines <br>
-        - Listings du matériel nécessaire pour les jours de restauration <br>
-        - Randonnée pédestre courte <br>
-        - Pique-nique conviviale (apporter à manger) <br>
+        <img class="imageplanning" src="../images/planning_05.png"> 
+        - Restauration du troisième lieu choisis <br>
+        - Repos avec des jus de fruits et gâteaux <br>
+        - Finalisation de la restauration <br>
     </span>
     </div>
 
@@ -87,13 +78,11 @@
     <div class="ligne-container"> <div class="ligne-arrondie"></div> </div>
     <!-- Section en flexbox pour l'image et le texte -->
     <div class="container flexd mt-5 mb-3">
-        - Rencontre entre les organisateurs et les volontaires <br>
-        - Création du plan d’action, quel ordre de restauration des patrimoines <br>
-        - Listings du matériel nécessaire pour les jours de restauration <br>
-        - Randonnée pédestre courte <br>
-        - Pique-nique conviviale (apporter à manger) <br>
+    - Restauration du quatrième lieu choisis <br>
+        - Repos avec des jus de fruits et gâteaux <br>
+        - Finalisation de la restauration <br>
     </span>
-    <img class="imagedon" src="../images/A COMPLETER"> 
+    <img class="imageplanning" src="../images/planning_06.png"> 
     </div>
 
         <!-- SECTION DES DONS EN EUROS -->
@@ -101,12 +90,9 @@
     <div class="ligne-container"> <div class="ligne-arrondie"></div> </div>
     <!-- Section en flexbox pour l'image et le texte -->
     <div class="container flexd mt-5 mb-3">
-        <img class="imagedon" src="../images/A COMPLETER"> 
-        - Rencontre entre les organisateurs et les volontaires <br>
-        - Création du plan d’action, quel ordre de restauration des patrimoines <br>
-        - Listings du matériel nécessaire pour les jours de restauration <br>
-        - Randonnée pédestre courte <br>
-        - Pique-nique conviviale (apporter à manger) <br>
+        <img class="imageplanning" src="../images/planning_07.png"> 
+        - Visite de tous les patrimoines rénover <br>
+        - Banquet de remerciement <br>
     </span>
     </div>
 
