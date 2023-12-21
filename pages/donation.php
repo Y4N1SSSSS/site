@@ -51,7 +51,7 @@ var totalDons = $totalDons;
         </div>
     </div>
     <!-- BOUTON POUR LES DONS ET INFORMATIONS -->
-    <a class="bouton NS mt-3" onclick="openDonationPopup()">Faire un don</a><a class="bouton NS mt-3">En savoir plus</a>
+    <a class="bouton NS mt-3" onclick="openDonationPopup()">Faire un don</a><a class="bouton NS mt-3" href="../images/pdfbyhugo.pdf">En savoir plus</a>
 </div>
 
 <script>
@@ -102,7 +102,7 @@ var totalDons = $totalDons;
     <!-- BOUTON POUR LES DONS ET INFORMATIONS -->
 <div class="d-flex justify-content-center">
 <a class="bouton NS" id="ouvrirPopup" onclick="toggleDonationForm()">Faire un don matériel</a>
-<a class="bouton NS">En savoir plus</a>
+<a class="bouton NS" href="../images/pdfbyhugo.pdf">En savoir plus</a>
 </div>
 </div>
 <!-- Emplacement pour la nouvelle div avec le formulaire -->

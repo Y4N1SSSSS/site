@@ -140,9 +140,6 @@ try{
       <a class="bouton NS mt-3">S'inscrire</a>
     </div>
   </div>
-  <div class="col-lg-4 d-flex align-items-center justify-content-center">
-  <a class="bouton NS" href="pages/participation.php">S'inscrire</a>
-  </div>
 </div>  
 </div>
 
