@@ -226,10 +226,6 @@ height: 150px;
 font-style: italic;
 }
 
-.taillelogo{
-    width: 14vw;
-}
-
 .typobold {
     font-family: PoppinsBold;
 }
@@ -371,4 +367,40 @@ margin-right: 2%;
     .margingresponsive {
         margin-left: 0%;
     }
+}
+
+.taillelogo{
+    width: 14vw;
+}
+
+@media only screen and (max-width: 991px) {
+    .taillelogo {
+        width: 200px;
+        display: block !important;
+        margin: auto !important;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .couleurnav{
+        background-color: #f9f7e4;
+        height: 100px;
+        }
+    
+}
+
+@media only screen and (max-width: 400px) {
+    .taillelogo {
+        width: 125px;
+        display: block !important;
+        margin: auto !important;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .couleurnav{
+        background-color: #f9f7e4;
+        height: 75px;
+        }
+    
 }
