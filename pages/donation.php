@@ -37,7 +37,7 @@ var totalDons = $totalDons;
 <!-- Section en flexbox pour l'image et le texte -->
 <div class="container flexd mt-5 mb-3">
     <img class="imagedon" src="../images/donsEUR.png">
-    <span class="spanD"><span class="titredon">Soutenez Notre Patrimoine National</span><br><br>
+    <span class="spanD"><span class="titredon">Soutenez Notre Patrimoine</span><br><br>
         Cher(e) ami(e) de la culture, votre don contribue à la préservation de notre riche patrimoine français. Aidez-nous à protéger nos trésors historiques et culturels. Chaque euros compte !</span>
 </div>
 <!-- Section en flexbox pour la barre de progression et les boutons -->

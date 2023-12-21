@@ -137,7 +137,7 @@ try{
     </h5> 
   </div>
   <div class="col-lg-4 d-flex align-items-center justify-content-center">
-  <a class="bouton NS">S'inscrire</a>
+  <a class="bouton NS" href="pages/participation.php">S'inscrire</a>
   </div>
 </div>  
 </div>
