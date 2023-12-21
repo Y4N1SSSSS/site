@@ -25,11 +25,22 @@ if (isset($_GET['done'])) {
           $_SESSION['nom'] = $nom;
           $_SESSION['mdp'] = $mdp;
 
-          if ($utilisateur["IS_Admin"] == 1) {
-              $_SESSION['admin'] = 1;
-          } else {
-              $_SESSION['admin'] = 0;
+          $requete = 'SELECT * FROM utilisateur WHERE Nom_user = :nom';
+        $statement = $pdo->prepare($requete);
+        $statement->bindParam(':nom', $nom, PDO::PARAM_STR);
+        $statement->execute();
+
+        $utilisateur = $statement->fetchAll(PDO::FETCH_ASSOC);  
+
+        foreach ($utilisateur as $accadmin):
+          if( $accadmin["IS_Admin"] == 1){
+            $_SESSION['admin'] = 1;
           }
+          else{
+           $_SESSION['admin'] = 0;
+          }
+        endforeach;
+        $statement->closeCursor();
 
           header('Location: ../index.php');
           exit();
