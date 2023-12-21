@@ -35,17 +35,18 @@ var totalDons = $totalDons;
 <h1 class="titres">Don Monétaire</h1>
 <div class="ligne-container"> <div class="ligne-arrondie"></div> </div>
 <!-- Section en flexbox pour l'image et le texte -->
-<div class="container flexd mt-5 mb-3">
+<div class="container flexd">
     <img class="imagedon" src="../images/donsEUR.png">
-    <span class="spanD"><span class="titredon">Soutenez Notre Patrimoine National</span><br><br>
-        Cher(e) ami(e) de la culture, votre don contribue à la préservation de notre riche patrimoine français. Aidez-nous à protéger nos trésors historiques et culturels. Chaque euros compte !</span>
+    <span class="spanD"><span class="titredon">Soutenez Notre Patrimoine</span><br><br>
+        Cher(e) ami(e) de la culture, votre don contribue à la préservation de notre riche patrimoine français. Aidez-nous à protéger nos trésors historiques et culturels. Chaque euro compte !</span>
 </div>
+
 <!-- Section en flexbox pour la barre de progression et les boutons -->
 <div class="flexEUR">
     <div class="txtclasse">
         <span class="progress-text">Progression  de  l'objectif  de  donation : </span>
         <!-- Barre de progression qui fonctionne avec le Javascript -->
-        <div class="progress-container mt-3">
+        <div class="progress-container">
             <div class="progress-bar" id="myBar"></div>
         </div>
     </div>
@@ -93,13 +94,13 @@ var totalDons = $totalDons;
     <h1 class="titres">Don Matériel</h1>
     <div class="ligne-container"> <div class="ligne-arrondie"></div> </div>
     <!-- Section en flexbox pour l'image et le texte -->
-    <div class="mt-5 container flex1">
+    <div class="container flex1">
         <span class="spanobj"><span class="titredon">Aidez-nous a Préserver Notre Culture</span><br><br>
             Chaque geste contribue à tisser la toile de notre passé, créant un lien tangible entre hier, aujourd'hui et demain. Rejoins-nous dans cette aventure de préservation, car la restauration de notre patrimoine commence avec toi.<br></span>
         <img class="imagedonOBJ" src="../images/donsOBJ.png">
     </div>
     <!-- BOUTON POUR LES DONS ET INFORMATIONS -->
-<div class="mt-5 d-flex justify-content-center mb-5">
+<div class="d-flex justify-content-center">
 <a class="bouton NS" id="ouvrirPopup" onclick="toggleDonationForm()">Faire un don matériel</a>
 <a class="bouton NS">En savoir plus</a>
 </div>
