@@ -66,6 +66,7 @@
     <div class="ligne-container"> <div class="ligne-arrondie"></div> </div>
     <!-- Section en flexbox pour l'image et le texte -->
     <div class="container flexd mt-5 mb-3">
+        
         <img class="imageplanning" src="../images/planning_05.png"> 
         - Restauration du troisième lieu choisis <br>
         - Repos avec des jus de fruits et gâteaux <br>
