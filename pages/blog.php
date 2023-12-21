@@ -34,6 +34,7 @@ include '../php/header.php';
   <div class="ligne-arrondie"></div>
   </div>
   </div>
+  <section class="container">
   <section class="row mt-5">
     <?php foreach ($article as $commentaire): ?>
         <div class="col-md-4 mt-3">
@@ -46,6 +47,7 @@ include '../php/header.php';
             </div>
         </div>
     <?php endforeach; ?>
+</section>
 </section>
 
 </article>

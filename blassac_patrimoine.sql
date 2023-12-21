@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mer. 20 déc. 2023 à 13:35
+-- Généré le : jeu. 21 déc. 2023 à 11:19
 -- Version du serveur : 10.4.27-MariaDB
 -- Version de PHP : 8.2.0
 
@@ -41,15 +41,14 @@ CREATE TABLE `article` (
 INSERT INTO `article` (`ID_article`, `Contenue`, `Titre`, `Date_article`) VALUES
 (1, 'dzeadedezdez', 'J\'ai la diarhée', '2023-12-18'),
 (2, 'apagnan burger', 'j\'ai une nouvelle diarhée', '2023-12-18'),
-(3, 'szasza', 'nan la faut vraiment que je chie', '2023-12-18'),
 (4, 'szaszaszadfazfezgéég', 'ching chang chong', '2023-12-18'),
 (5, 'ninoefvz,poaefzi,po', '5 ème texte', '2023-12-18'),
 (6, 'vive daesh', '6ème commentaire haineux', '2023-12-18'),
 (7, 'sza', 'sza', '2023-12-18'),
-(8, 'ta gueule', 'masterchiasse', '2023-12-18'),
 (9, 'j\'avoue que c\'est de la folie d\'avoir un event aussi bien ', 'c\'est fou ce qu\'il se passe quand même', '2023-12-18'),
 (10, 'ceci est un test au four', 'alors voyons voir si ça marche', '2023-12-18'),
-(11, 'voyons voir ce que ça donne', 'c\'est parti pour le test final', '2023-12-18');
+(11, 'voyons voir ce que ça donne', 'c\'est parti pour le test final', '2023-12-18'),
+(14, 'la dcp je vais débiter beaucoup de gens la', 'masterclass', '2023-12-20');
 
 -- --------------------------------------------------------
 
@@ -69,23 +68,8 @@ CREATE TABLE `donation` (
 --
 
 INSERT INTO `donation` (`ID_don`, `Valeur`, `Date_don`, `ID_user`) VALUES
-(1, 25, '2023-12-19', NULL),
-(2, 500, '2023-12-19', NULL),
-(3, 90, '2023-12-19', NULL),
-(4, 400, '2023-12-19', NULL),
-(5, 1000, '2023-12-19', NULL),
-(6, 30, '2023-12-19', NULL),
-(7, 1000, '2023-12-19', NULL),
-(8, 15, '2023-12-19', NULL),
-(9, 50, '2023-12-19', NULL),
-(10, 100, '2023-12-19', NULL),
-(11, 500, '2023-12-19', NULL),
-(12, 550, '2023-12-19', NULL),
-(13, 40, '2023-12-19', NULL),
-(14, 1000, '2023-12-19', NULL),
-(17, 500, '2023-12-20', NULL),
-(18, 500, '2023-12-20', 2),
-(19, 500, '2023-12-20', 1);
+(32, 500, '2023-12-21', 1),
+(33, 1500, '2023-12-21', 1);
 
 -- --------------------------------------------------------
 
@@ -97,8 +81,16 @@ CREATE TABLE `don_objet` (
   `ID_donObj` int(11) NOT NULL,
   `Type_objet` varchar(100) DEFAULT NULL,
   `Description` varchar(400) DEFAULT NULL,
-  `Date` date DEFAULT NULL
+  `Date` date DEFAULT NULL,
+  `ID_user` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Déchargement des données de la table `don_objet`
+--
+
+INSERT INTO `don_objet` (`ID_donObj`, `Type_objet`, `Description`, `Date`, `ID_user`) VALUES
+(21, 'outil', 'feazfezafsq', '2023-12-21', 1);
 
 -- --------------------------------------------------------
 
@@ -142,6 +134,20 @@ INSERT INTO `link_donation` (`ID_user`, `ID_don`) VALUES
 (1, 13),
 (1, 14),
 (1, 19),
+(1, 20),
+(1, 21),
+(1, 22),
+(1, 23),
+(1, 24),
+(1, 25),
+(1, 26),
+(1, 27),
+(1, 28),
+(1, 29),
+(1, 30),
+(1, 31),
+(1, 32),
+(1, 33),
 (2, 17),
 (2, 18);
 
@@ -181,19 +187,6 @@ CREATE TABLE `participant` (
   `num_participant` varchar(20) NOT NULL,
   `CP_participant` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Déchargement des données de la table `participant`
---
-
-INSERT INTO `participant` (`ID_participant`, `Nom_participant`, `Prenom_participant`, `email_participant`, `num_participant`, `CP_participant`) VALUES
-(1, 'Michaud', 'Yanis', 'yanismichaud_4@outlook.fr', '2147483647', 71000),
-(2, 'dza', 'dza', 'dza@dzoa.fr', '0', 70100),
-(3, 'dza', 'dza', 'dza@dzoa.fr', '0', 70100),
-(4, 'Mohammed ', 'Merra', 'jean-eude@tuning.com', '746861522', 43000),
-(5, 'Racaille', 'Mouloud', 'mouloudracaille@gmail.com', '0684512397', 12542),
-(6, 'Reyes', 'Rafael', 'chiassemaster@gmail.com', '0624513687', 43000),
-(7, 'Gourmelin', 'Hippo', 'tagueule@chiasse.com', '0745129584', 43000);
 
 -- --------------------------------------------------------
 
@@ -237,7 +230,8 @@ ALTER TABLE `donation`
 -- Index pour la table `don_objet`
 --
 ALTER TABLE `don_objet`
-  ADD PRIMARY KEY (`ID_donObj`);
+  ADD PRIMARY KEY (`ID_donObj`),
+  ADD KEY `ID_user` (`ID_user`);
 
 --
 -- Index pour la table `evenement`
@@ -286,19 +280,19 @@ ALTER TABLE `utilisateur`
 -- AUTO_INCREMENT pour la table `article`
 --
 ALTER TABLE `article`
-  MODIFY `ID_article` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `ID_article` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT pour la table `donation`
 --
 ALTER TABLE `donation`
-  MODIFY `ID_don` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `ID_don` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT pour la table `don_objet`
 --
 ALTER TABLE `don_objet`
-  MODIFY `ID_donObj` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID_donObj` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT pour la table `evenement`
