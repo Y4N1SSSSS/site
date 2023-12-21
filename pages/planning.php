@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link href='../css/stylepages.css' rel='stylesheet'>
+    <script src="../js/arrow.js"></script>
     <title>Planning</title>
 </head>
     <!-- Ajout du header -->
@@ -12,6 +13,7 @@
         include "../php/header.php" ;
     ?>
 <body>
+    
     <!-- SECTION DES DONS EN EUROS -->
     <h1 class="titres">Jour 1</h1>
     <div class="ligne-container"> <div class="ligne-arrondie"></div> </div>
@@ -24,7 +26,10 @@
         - Randonnée pédestre courte <br>
     </span>
     </div>
-
+    <!-- Flèche de retour en haut -->
+    <div href="#top" id="back-to-top">
+        <img src="../images/flèche.png" alt="Flèche de retour">
+    </div>
     <!-- SECTION DES DONS EN EUROS -->
     <h1 class="titres">Jour 2</h1>
     <div class="ligne-container"> <div class="ligne-arrondie"></div> </div>

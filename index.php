@@ -21,6 +21,7 @@ try{
 <link rel="stylesheet" href="css/owl.theme.default.min.css">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/style.css">
+<script src="js/arrow.js"></script>
 <title>Accueil</title>
 </head>
 <body>
@@ -85,7 +86,7 @@ try{
         ?>
   </div>
 </nav>
-
+<div class="background">
 <section id="carrousel">
 
 <div class="owl-carousel owl-theme">
@@ -110,7 +111,10 @@ try{
 <script src="js/carrousel.js"></script>
 
 </section>
-
+    <!-- Flèche de retour en haut -->
+<div href="#top" id="back-to-top">
+  <img src="images/flèche.png" alt="Flèche de retour">
+</div>
 <section id="contenu">
 
 <div>
@@ -334,7 +338,7 @@ try{
 </article>
 </section>
 <body>
-
+</div>
 <footer class="footer text-light">
     <div class="container py-4">
         <div class="row">
