@@ -50,7 +50,7 @@ try{
         <?php 
         if(isset($_SESSION["nom"])){
                 if( $_SESSION['admin'] == 1){
-                  echo(' </ul>
+                  echo(' 
                   </div>
                 <a href="pages/Admin.php" class="ms-4 co"> Administration </a>
                 <a class="ms-4 co texteitalic">'
@@ -58,6 +58,7 @@ try{
                 <a class="ms-2 co" href="php/logout.php">
                   <img width="32px" height="32px" class="rotationlogo" src="images/decov2.png" alt="deco">
                 </a>
+                </ul>
               ');
                 }
           else{
@@ -139,7 +140,7 @@ try{
       </h5>
     </div>
     <div class="col-lg-3 d-flex align-items-center justify-content-center">
-      <a class="bouton NS mt-3">S'inscrire</a>
+      <a class="bouton NS mt-3" href="pages/participation.php">S'inscrire</a>
     </div>
   </div>
 </div>  

@@ -388,7 +388,7 @@ margin-right: 2%;
     width: 14vw;
 }
 
-@media only screen and (max-width: 991px) {
+/* @media only screen and (max-width: 991px) {
     .taillelogo {
         width: 200px;
         display: block !important;
@@ -410,4 +410,4 @@ margin-right: 2%;
         transform: translate(-50%, -50%);
         padding:5%
     }  
-}
+} */

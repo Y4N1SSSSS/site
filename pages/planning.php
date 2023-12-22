@@ -15,7 +15,7 @@
 <body>
     
     <!-- SECTION DES DONS EN EUROS -->
-    <h1 class="titres">Jour 1</h1>
+    <h1 class="titres mt-5">Jour 1</h1>
     <div class="ligne-container"> <div class="ligne-arrondie"></div> </div>
     <!-- Section en flexbox pour l'image et le texte -->
     <div class="container flexd mt-5 mb-3">
