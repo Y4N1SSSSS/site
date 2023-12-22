@@ -49,7 +49,6 @@
     <div class="container flexd mt-5 mb-3">
         <img class="imageplanning" src="../images/planning_03.png"> 
         - Restauration du premier lieu choisis <br>
-        - Repos avec des jus de fruits et gâteaux <br>
         - Finalisation de la restauration <br>
     </span>
     </div>
@@ -60,7 +59,6 @@
     <!-- Section en flexbox pour l'image et le texte -->
     <div class="container flexd mt-5 mb-3">
     - Restauration du second lieu choisis <br>
-        - Repos avec des jus de fruits et gâteaux <br>
         - Finalisation de la restauration <br>
     </span>
     <img class="imageplanning" src="../images/planning_04.png"> 
@@ -74,7 +72,6 @@
         
         <img class="imageplanning" src="../images/planning_05.png"> 
         - Restauration du troisième lieu choisis <br>
-        - Repos avec des jus de fruits et gâteaux <br>
         - Finalisation de la restauration <br>
     </span>
     </div>
@@ -85,7 +82,6 @@
     <!-- Section en flexbox pour l'image et le texte -->
     <div class="container flexd mt-5 mb-3">
     - Restauration du quatrième lieu choisis <br>
-        - Repos avec des jus de fruits et gâteaux <br>
         - Finalisation de la restauration <br>
     </span>
     <img class="imageplanning" src="../images/planning_06.png"> 
@@ -97,7 +93,7 @@
     <!-- Section en flexbox pour l'image et le texte -->
     <div class="container flexd mt-5 mb-3">
         <img class="imageplanning" src="../images/planning_07.png"> 
-        - Visite de tous les patrimoines rénover <br>
+        - Visite de tous les patrimoines rénovés <br>
         - Banquet de remerciement <br>
     </span>
     </div>
