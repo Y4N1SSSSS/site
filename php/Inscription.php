@@ -46,8 +46,9 @@ class UserRegistration
         $user_nom = $verify_nom->fetchAll();
 
         if (count($user_nom) > 0) {
-            $_SESSION['error'] = "Ce compte existe déjà. Veuillez sélectionner un autre nom d'utilisateur";
+            $_SESSION['error'] = "<style> .erreur{ color: #d9071c; } </style> <span class='erreur'> *Ce nom d'utilisateur est déjà pris. Veuillez en choisir un autre</span>";
             header('Location: InscriptionForm.php');
+            
         } else {
             $inscrire = $this->pdo->prepare("INSERT INTO utilisateur(Nom_user, Mdp_user) VALUES (?, ?)");
 
