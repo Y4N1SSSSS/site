@@ -17,6 +17,7 @@ error_reporting(0);
     <div class="ligne-container"> <div class="ligne-arrondie"></div> </div>
 
     <div class="container mt-3">
+    <?PHP echo $_SESSION['error']; ?>
         <form method="get" action="inscription.php" class="row">
             <div class="col-md-12">
                 <div class="form-group">
@@ -33,7 +34,7 @@ error_reporting(0);
         </div>  
 </form>
     </article>
-    <?PHP echo $_SESSION['error']; ?>
+    
 
     <!-- Ajout du footer -->
     <?php
