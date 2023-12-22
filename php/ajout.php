@@ -9,7 +9,6 @@
        catch(PDOException $e){
           echo $e->getMessage();
        }
-    // ajout d'un article
     $requete_preparee= $pdo->prepare('INSERT INTO article(ID_article, Titre, Contenue, Date_article) VALUES (NULL,:Titre,:Contenue,:Date_article)');
     $requete_preparee->bindValue(':Titre',$_GET["titre"], PDO::PARAM_STR);
     $requete_preparee->bindValue(':Contenue',$_GET["texte"], PDO::PARAM_STR);

@@ -353,7 +353,7 @@ input[type="email"]{
 
 .form-animation.active {
     opacity: 1;
-    max-height: 500px; /* ou la hauteur que vous préférez */
+    max-height: 500px; 
 }
 
 .imageplanning{

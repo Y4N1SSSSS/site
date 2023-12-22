@@ -20,7 +20,6 @@ if (isset($_GET['done'])) {
   if ($stmt->rowCount() == 1) {
       $utilisateur = $stmt->fetch(PDO::FETCH_ASSOC);
 
-      // Utiliser password_verify pour vérifier le mot de passe
       if (password_verify($mdp, $utilisateur['Mdp_user'])) {
           $_SESSION['nom'] = $nom;
           $_SESSION['mdp'] = $mdp;

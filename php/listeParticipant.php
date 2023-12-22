@@ -2,15 +2,12 @@
 require_once '../php/Config.php';
 
 try {
-// Connexion à la base de données
 $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $user, $password);
 
-// Récupérer tous les participants
 $requete = $pdo->query('SELECT * FROM participant');
 $participant = $requete->fetchAll(PDO::FETCH_ASSOC);
 
 } catch (PDOException $e) {
-// En cas d'erreur, afficher le message d'erreur
 echo "Erreur : " . $e->getMessage();
 }
 ?>

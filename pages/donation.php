@@ -112,20 +112,15 @@ var totalDons = $totalDons;
 var isDonationFormVisible = false;
 var createdDiv = null;
 
-// Fonction pour créer ou supprimer la div avec le formulaire
 function toggleDonationForm() {
     if (isDonationFormVisible) {
-        // Supprimer la classe "active" pour cacher le formulaire
         createdDiv.classList.remove("active");
-        setTimeout(removeDonationForm, 500); // Attendre la fin de l'animation (500ms)
+        setTimeout(removeDonationForm, 500); 
     } else {
-        // Créer un nouvel élément div
         createdDiv = document.createElement("div");
 
-        // Ajouter la classe "form-animation" pour l'animation
         createdDiv.classList.add("form-animation");
 
-        // Définir le contenu HTML de la nouvelle div (le formulaire)
         createdDiv.innerHTML = `
             <div id="donationFormDiv">
                 <div class="container">
@@ -150,22 +145,17 @@ function toggleDonationForm() {
             </div>
         `;
 
-        // Ajouter la nouvelle div à la page, juste après le bouton
         document.getElementById("dynamicFormContainer").appendChild(createdDiv);
 
-        // Attendre un instant pour que l'élément soit ajouté au DOM, puis ajouter la classe "active"
         setTimeout(function () {
             createdDiv.classList.add("active");
         }, 0);
     }
 
-    // Inverser l'état
     isDonationFormVisible = !isDonationFormVisible;
 }
 
-// Fonction pour supprimer la div
 function removeDonationForm() {
-    // Vérifier si la div existe et si oui, la supprimer
     if (createdDiv) {
         document.getElementById("dynamicFormContainer").removeChild(createdDiv);
         createdDiv = null;
@@ -181,7 +171,6 @@ function removeDonationForm() {
 
 </body>
 
-<!-- Ajout du footer -->
 <?php include "../php/footer.php"; ?>
 
 </html>

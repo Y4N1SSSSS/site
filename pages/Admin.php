@@ -95,22 +95,15 @@ try {
     <?php
 if (isset($_POST['supprimer_toutes_donations'])) {
     try {
-        // Connexion à la base de données
         $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $user, $password);
         
-        // Désactiver la vérification des clés étrangères
         $pdo->exec('SET foreign_key_checks = 0');
 
-        // Requête pour supprimer toutes les donations monétaires
         $requeteSuppression = 'DELETE FROM donation';
         $pdo->exec($requeteSuppression);
 
-        // Réactiver la vérification des clés étrangères
         $pdo->exec('SET foreign_key_checks = 1');
 
-        // Redirection ou affichage d'un message de succès
-        // header("Location: url_de_redirection_apres_suppression.php");
-        // exit();
         echo '<h4 class="text-center texteitalic mt-3 mb-3">Toutes les donations monétaires ont été supprimées avec succès.</h4>';
     } catch (PDOException $e) {
         echo "Erreur lors de la suppression des donations : " . $e->getMessage();
@@ -118,7 +111,6 @@ if (isset($_POST['supprimer_toutes_donations'])) {
 }
 ?>
 
-<!-- Ajoutez ce bouton dans la section correspondante -->
 <div class="d-flex justify-content-center">
 <form method="POST">
     <button type="submit" name="supprimer_toutes_donations" class="btn btn-danger mt-3 mb-5">Supprimer toutes les donations monétaires</button>
@@ -135,22 +127,15 @@ if (isset($_POST['supprimer_toutes_donations'])) {
     <?php
     if (isset($_POST['supprimer_toutes_donations_materielles'])) {
         try {
-            // Connexion à la base de données
             $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $user, $password);
 
-            // Désactiver la vérification des clés étrangères
             $pdo->exec('SET foreign_key_checks = 0');
 
-            // Requête pour supprimer toutes les données de la table "don_objet"
             $requeteSuppressionMateriel = 'DELETE FROM don_objet';
             $pdo->exec($requeteSuppressionMateriel);
 
-            // Réactiver la vérification des clés étrangères
             $pdo->exec('SET foreign_key_checks = 1');
 
-            // Redirection ou affichage d'un message de succès
-            // header("Location: url_de_redirection_apres_suppression.php");
-            // exit();
             echo '<h4 class="text-center texteitalic mt-3 mb-3">Toutes les donations matérielles ont été supprimées avec succès.</h4>';
         } catch (PDOException $e) {
             echo "Erreur lors de la suppression des donations matérielles : " . $e->getMessage();
@@ -158,7 +143,6 @@ if (isset($_POST['supprimer_toutes_donations'])) {
     }
     ?>
 
-    <!-- Ajoutez ce bouton dans la section correspondante -->
     <div class="d-flex justify-content-center mt-3 mb-5">
         <form method="POST">
             <button type="submit" name="supprimer_toutes_donations_materielles" class="btn btn-danger mt-2 mb-5">Supprimer toutes les donations matérielles</button>
@@ -169,8 +153,6 @@ if (isset($_POST['supprimer_toutes_donations'])) {
 
     </section>
 </section>
-
-
 
     <?php else : ?>
         <h1 class="titres">Vous n'êtes pas autorisé à accéder à cette page</h1>

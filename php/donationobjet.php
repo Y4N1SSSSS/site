@@ -26,7 +26,6 @@ if (isset($_SESSION["nom"]) && isset($_POST["type_objet"]) && isset($_POST["desc
         exit();
     }
 
-    // Récupérer l'ID de l'utilisateur en fonction du nom
     $username = $_SESSION["nom"];
     $queryUserID = $pdo->prepare("SELECT ID_user FROM utilisateur WHERE Nom_user = :username");
     $queryUserID->bindParam(":username", $username);
@@ -37,10 +36,8 @@ if (isset($_SESSION["nom"]) && isset($_POST["type_objet"]) && isset($_POST["desc
         $userID = $result["ID_user"];
 
         try {
-            // Démarrer la transaction
             $pdo->beginTransaction();
 
-            // Insérer le don d'objet dans la table don_objet avec l'ID de l'utilisateur
             $typeObjet = $_POST["type_objet"];
             $description = $_POST["description"];
             $query = $pdo->prepare("INSERT INTO don_objet (ID_user, Type_objet, Description, Date) VALUES (:userID, :typeObjet, :description, CURRENT_DATE())");
@@ -49,10 +46,8 @@ if (isset($_SESSION["nom"]) && isset($_POST["type_objet"]) && isset($_POST["desc
             $query->bindParam(":description", $description);
             $query->execute();
 
-            // Valider la transaction
             $pdo->commit();
 
-            // Envoyer une réponse au client (facultatif)
             echo "<div class='center-content'>";
             echo "<h1 class='titresR'>Merci pour votre don!</h1>";
             echo "<div class='ligne-container'><div class='ligne-arrondieXXL'></div></div>";
@@ -61,7 +56,6 @@ if (isset($_SESSION["nom"]) && isset($_POST["type_objet"]) && isset($_POST["desc
             echo "</div>";            
             echo "<div class='ligne-container'><a class='boutonresult NS' href='../index.php'>Accueil</a></div>";
         } catch (Exception $e) {
-            // En cas d'erreur, annuler la transaction
             $pdo->rollBack();
             echo "Erreur lors du don d'objet : " . $e->getMessage();
         }

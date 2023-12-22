@@ -10,11 +10,9 @@ try{
       echo $e->getMessage();
     }
 
-    // suppression d'un article
     $requete='DELETE FROM article WHERE ID_article='.$_GET["ID_article"];
     $suppr=$pdo->exec($requete);
 
-    // redirection
     header('Location: ../pages/admin.php');
     exit();
 

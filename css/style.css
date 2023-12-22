@@ -190,7 +190,7 @@ transform: rotate(180deg);
         width: 45vw;
         height: auto;
         text-align: center;
-        display: block; /* Pour que les marges automatiques fonctionnent correctement */
+        display: block; 
         margin-left: auto;
         margin-right: auto;
     }
@@ -280,13 +280,13 @@ font-style: italic;
 
 @keyframes grow-shrink {
     0% {
-      transform: scale(1); /* Taille normale à 100% */
+      transform: scale(1); 
     }
     50% {
-      transform: scale(1.3); /* Taille agrandie à 120% à mi-chemin */
+      transform: scale(1.3); 
     }
     100% {
-      transform: scale(1); /* Retour à la taille normale à 100% à la fin */
+      transform: scale(1); 
     }
   }
 
@@ -321,7 +321,7 @@ background-color: #000000;
 .card {
     border: 1px solid #ddd;
     border-radius: 10px;
-    background-color: #1f1c1a; /* Ajout de la couleur de fond noire à la classe .card */
+    background-color: #1f1c1a; 
 }
 
 .card-title {
@@ -330,11 +330,11 @@ font-size: 1.25rem;
 }
 
 .card-body {
-    padding: 1rem; /* Ajout d'un peu de marge à l'intérieur de la carte */
+    padding: 1rem; 
 }
 
 .card-title {
-    color: #ffffff; /* Changer la couleur du texte en blanc pour contraster avec le fond noir */
+    color: #ffffff; 
     font-size: 1.25rem;
     text-transform: capitalize;
 }

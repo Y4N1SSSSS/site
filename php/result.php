@@ -70,7 +70,6 @@ class InscriptionHandler
     }
 }
 
-// Usage
 $inscriptionHandler = new InscriptionHandler();
 $inscriptionHandler->handleInscription();
 

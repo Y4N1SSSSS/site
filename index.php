@@ -225,7 +225,6 @@ try{
 </div>
 
 <script>
-  // Fonction qui permet de récupérer les dons depuis la BDD en utilisant le fichier php "totalDons.php" 
   async function getDataFromDatabase() {
     try {
         const response = await fetch('php/totalDons.php');
@@ -237,28 +236,23 @@ try{
     }
 }
 
-  // Fonction pour mettre a jour le compteur en ajoutant les données de la BDD chaques x secondes
   async function updateCounter() {
     try {
-      // Utilisation de la fonction de récupération des données de la base pour avoir le total des dons
       const data = await getDataFromDatabase();
 
-      // Mise à jour du compteur
       const counterElement = document.getElementById('counter');
       counterElement.innerText = formatNumberWithSpaces(data) + '€';
 
-      // Répète la mise à jour toutes les x secondes ( ici toutes les 1 secondes )
       setTimeout(updateCounter, 1000);
     } catch (error) {
       console.error('Erreur lors de la mise à jour du compteur :', error);
     }
   }
-  // Fonction pour formater le nombre avec des espaces entre les milliers 
+
   function formatNumberWithSpaces(number) {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
   }
   
-  // Lance la première mise à jour du compteur
   updateCounter();
 </script>
 </section>

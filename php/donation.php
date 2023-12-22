@@ -16,7 +16,6 @@ if (isset($_SESSION["nom"]) && isset($_POST["amount"])) {
     }
 
     try {
-        // Récupérer l'ID de l'utilisateur
         $nom = $_SESSION["nom"];
         $query = $pdo->prepare("SELECT ID_user FROM utilisateur WHERE Nom_user = :nom");
         $query->bindParam(":nom", $nom);
@@ -24,33 +23,25 @@ if (isset($_SESSION["nom"]) && isset($_POST["amount"])) {
         $result = $query->fetch(PDO::FETCH_ASSOC);
         $userID = $result["ID_user"];
 
-        // Démarrer la transaction
         $pdo->beginTransaction();
 
-        // Insérer le don dans la table donation avec l'ID de l'utilisateur
         $amount = (int)($_POST["amount"]);
         $queryInsertDon = $pdo->prepare("INSERT INTO donation(Valeur, Date_don, ID_user) VALUES (:amount, CURRENT_DATE(), :userID)");
         $queryInsertDon->bindParam(":amount", $amount, PDO::PARAM_INT);
         $queryInsertDon->bindParam(":userID", $userID, PDO::PARAM_INT);
         $queryInsertDon->execute();
 
-        // Récupérer l'ID du don
         $donID = $pdo->lastInsertId();
 
-
-        // Ajouter l'entrée dans la table link_donation
         $queryInsertLink = $pdo->prepare("INSERT INTO link_donation(ID_user, ID_don) VALUES (:userID, :donID)");
         $queryInsertLink->bindParam(":userID", $userID, PDO::PARAM_INT);
         $queryInsertLink->bindParam(":donID", $donID, PDO::PARAM_INT);
         $queryInsertLink->execute();
 
-        // Valider la transaction
         $pdo->commit();
 
-        // Envoyer une réponse au client (facultatif)
         echo "Don effectué avec succès !";
     } catch (PDOException $e) {
-        // En cas d'erreur, annuler la transaction
         $pdo->rollBack();
         error_log("Erreur lors de la donation : " . $e->getMessage());
         echo "Erreur lors de la donation. Consultez les logs pour plus d'informations.";

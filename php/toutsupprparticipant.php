@@ -10,11 +10,9 @@ try{
       echo $e->getMessage();
     }
 
-    // suppression d'un article
     $requete='DELETE FROM participant';
     $suppr=$pdo->exec($requete);
 
-    // redirection
     header('Location: ../pages/admin.php');
     exit();
 
